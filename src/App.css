@@ -3,12 +3,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #D4E2DD;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #2C3E2F;
+}
+
+.App-header h1 {
+  padding-top: 40vh;
+  margin: 0;
+}
+
+.App-header h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.App-header img {
+  padding-top: 20vh ;
 }

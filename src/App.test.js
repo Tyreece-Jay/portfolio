@@ -3,6 +3,18 @@ import App from './App';
 
 test('renders name', () => {
   render(<App />);
-  const name = screen.getByText("Tyreece Simpson");
+  const name = screen.getByText("TYREECE SIMPSON");
   expect(name).toBeInTheDocument();
+});
+
+test('renders headline', () => {
+  render(<App />);
+  const headline = screen.getByText("Full-Stack Software Engineer | Front-End Specialist");
+  expect(headline).toBeInTheDocument();
+});
+
+test('renders down arrow', () => {
+  render(<App />);
+  const downArrow = screen.getByAltText("down arrow");
+  expect(downArrow).toBeInTheDocument();
 });
