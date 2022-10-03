@@ -18,3 +18,9 @@ test('renders down arrow', () => {
   const downArrow = screen.getByAltText("down arrow");
   expect(downArrow).toBeInTheDocument();
 });
+
+test('renders footer text', () => {
+  render(<App />);
+  const footerText = screen.getByText("Copyright © 2022 Tyreece Simpson - All Rights Reserved.");
+  expect(footerText).toBeInTheDocument();
+});

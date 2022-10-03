@@ -13,6 +13,7 @@ function App() {
         </h3>
         <img src={downarrow} alt="down arrow" />
       </header>
+      <footer>Copyright © 2022 Tyreece Simpson - All Rights Reserved.</footer>
     </div>
   );
 }
