@@ -9,14 +9,22 @@ test('renders name', () => {
 
 test('renders headline', () => {
   render(<App />);
-  const headline = screen.getByText("Full-Stack Software Engineer | Front-End Specialist");
-  expect(headline).toBeInTheDocument();
+  const partOne = screen.getByText("Full-Stack Software Engineer");
+  const partTwo = screen.getByText("Front-End Specialist");
+  expect(partOne).toBeInTheDocument();
+  expect(partTwo).toBeInTheDocument();
 });
 
 test('renders down arrow', () => {
   render(<App />);
   const downArrow = screen.getByAltText("down arrow");
   expect(downArrow).toBeInTheDocument();
+});
+
+test('renders about text', () => {
+  render(<App />);
+  const aboutText = screen.getByLabelText("about text");
+  expect(aboutText).toBeInTheDocument();
 });
 
 test('renders footer text', () => {
