@@ -33,6 +33,12 @@ test('renders skills title', () => {
   expect(skillsTitle).toBeInTheDocument();
 });
 
+test('renders skills', () => {
+  render(<App />);
+  const skills = screen.getByLabelText("skills");
+  expect(skills).toBeInTheDocument();
+});
+
 test('renders footer text', () => {
   render(<App />);
   const footerText = screen.getByText("Copyright © 2022 Tyreece Simpson - All Rights Reserved.");
