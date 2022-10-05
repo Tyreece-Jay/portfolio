@@ -27,6 +27,12 @@ test('renders about text', () => {
   expect(aboutText).toBeInTheDocument();
 });
 
+test('renders skills title', () => {
+  render(<App />);
+  const skillsTitle = screen.getByText("PROFESSIONAL SKILLS");
+  expect(skillsTitle).toBeInTheDocument();
+});
+
 test('renders footer text', () => {
   render(<App />);
   const footerText = screen.getByText("Copyright © 2022 Tyreece Simpson - All Rights Reserved.");
