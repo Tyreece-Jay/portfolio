@@ -24,8 +24,8 @@ function App() {
         </div>
         <div className="Skill-header">
           <h4>PROFESSIONAL SKILLS</h4>
-          <div aria-label='skills' style={{ width: 200, height: 200 }}>
-            {/* <CircularProgressbar value={66} text={`React`} /> */}
+          <div aria-label='skills' className="Skills">
+            <CircularProgressbar value={66} text={`React`} />
           </div>
         </div>
       </body> 

@@ -36,6 +36,28 @@
   color: #2C3E2F;
 }
 
+.Skills{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  padding-bottom: 10vh;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke-linecap: butt;
+  stroke: #CEAC5D;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #D4E2DD;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  font-size: 15px;
+  font-weight: 600;
+  fill: #2C3E2F;
+}
+
 footer {
   padding: 20px;
   color: #202020;
