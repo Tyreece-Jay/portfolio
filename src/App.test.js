@@ -35,8 +35,11 @@ test('renders skills title', () => {
 
 test('renders skills', () => {
   render(<App />);
-  const skills = screen.getByLabelText("skills");
-  expect(skills).toBeInTheDocument();
+  expect(screen.getByText("React")).toBeInTheDocument();
+  expect(screen.getByText("TypeScript")).toBeInTheDocument();
+  expect(screen.getByText("HTML & CSS")).toBeInTheDocument();
+  expect(screen.getByText("C#")).toBeInTheDocument();
+  expect(screen.getByText("SQL")).toBeInTheDocument();
 });
 
 test('renders footer text', () => {
