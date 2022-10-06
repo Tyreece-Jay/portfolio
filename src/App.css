@@ -5,7 +5,7 @@
 
 .App-header{
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: #2C3E2F;
 }
 
@@ -17,6 +17,7 @@
 .App-header h3 {
   font-weight: 300;
   margin: 0;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-header img {
@@ -31,12 +32,12 @@
   padding-bottom: 10vh;
 }
 
-.Skill-header{
+.Skills-header {
   font-size: calc(10px + 2vmin);
   color: #2C3E2F;
 }
 
-.Skills{
+.Skills {
   display: flex;
   justify-content: center;
   height: 20vh;
