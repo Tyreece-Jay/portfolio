@@ -1,4 +1,4 @@
-import { name, headline, down_arrow, about_text, skills_title, footer_text } from './App.steps'
+import { name, headline, down_arrow, about_text, skills_title, footer_text } from './app.steps'
 
 describe('renders', () => {
   test('name', name);

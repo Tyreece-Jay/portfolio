@@ -1,5 +1,5 @@
 import Downarrow from './icons8-expand-arrow-96.png';
-import './App.css';
+import './app.css';
 
 function App() {
   return (
