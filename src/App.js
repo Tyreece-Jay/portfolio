@@ -1,9 +1,9 @@
-import Downarrow from './icons8-expand-arrow-96.png';
+import Downarrow from './components/icons8-expand-arrow-96.png';
 import './app.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <h1>
           TYREECE SIMPSON
@@ -14,7 +14,7 @@ function App() {
         <h3>
           Front-End Specialist
         </h3>
-        <img src={Downarrow} alt="down arrow" />
+        <img src={Downarrow} alt="down arrow" className="Down-arrow"/>
       </header>
       <body>
         <div>
