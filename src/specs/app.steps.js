@@ -1,3 +1,4 @@
+import userEvent from '@testing-library/user-event';
 import { page } from './app.page';
 
 beforeEach(() => {
@@ -33,3 +34,11 @@ export async function skills_title() {
 export async function footer_text() {
   expect(page.footertext).toBeInTheDocument();
 };
+
+export async function clickable_github_icon() {
+  expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
+}
+
+export async function clickable_linkedin_icon() {
+  expect(page.linkedinlink).toHaveAttribute('href', 'https://linkedin.com/in/tyreece-simpson-287912160')
+}
