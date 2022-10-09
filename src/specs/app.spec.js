@@ -1,4 +1,4 @@
-import { name, headlines, icons, down_arrow, about_text, skills_title, footer_text, clickable_linkedin_icon, clickable_github_icon } from './app.steps'
+import { name, headlines, icons, down_arrow, about_text, skills_title, skills, footer_text, clickable_linkedin_icon, clickable_github_icon } from './app.steps'
 
 describe('renders', () => {
   test('name', name);
@@ -7,6 +7,7 @@ describe('renders', () => {
   test('down arrow', down_arrow);
   test('about text', about_text);
   test('skills title', skills_title);
+  test('skills', skills);
   test('footer text', footer_text); 
 });
 

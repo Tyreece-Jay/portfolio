@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event';
 import { page } from './app.page';
 
 beforeEach(() => {
@@ -29,6 +28,11 @@ export async function about_text() {
 
 export async function skills_title() {
   expect(page.skillstitle).toBeInTheDocument();
+};
+
+export async function skills() {
+  expect(page.skillsicon("react")).toBeInTheDocument();
+  expect(page.skillsname("REACT")).toBeInTheDocument();
 };
 
 export async function footer_text() {

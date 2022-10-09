@@ -16,8 +16,10 @@ export const page = {
     get downarrow() { return elements.alt("down arrow") },
     get abouttext() { return elements.label("about text") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
-    get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") }
+    get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
 
+    skillsicon(text) {return elements.alt(text)},
+    skillsname(text) {return elements.text(text)}
 }
 
 const elements = {

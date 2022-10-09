@@ -1,6 +1,7 @@
 import Downarrow from './components/icons8-expand-arrow-96.png';
 import Github from './components/github.png';
 import Linkedin from './components/linkedin.png';
+import React from './components/react.png';
 import './app.css';
 
 function App() {
@@ -11,12 +12,12 @@ function App() {
           TYREECE SIMPSON
         </h1>
         <div className='Headlines'>
-          <h3>
+          <h2>
             Full-Stack Software Engineer
-          </h3>
-          <h3>
+          </h2>
+          <h2>
             Front-End Specialist
-          </h3>
+          </h2>
         </div>
         <div className='Icons'>
           <a href="https://linkedin.com/in/tyreece-simpson-287912160" className="Linkedin" aria-label='linkedin link'><img src={Linkedin} alt="LinkedIn" /></a>
@@ -29,8 +30,10 @@ function App() {
           <p className="About-text" aria-label='about text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div>
-          <h4 className="Skills-header">PROFESSIONAL SKILLS</h4>
+          <h3 className="Skills-header">PROFESSIONAL SKILLS</h3>
           <div className="Skills">
+            <img src={React} alt="react" />
+            <h4>REACT</h4>
           </div>
         </div>
       </body>

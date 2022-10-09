@@ -31,7 +31,7 @@
   margin-left: 27vw;
 }
 
-.Headlines h3 {
+.Headlines h2 {
   font-weight: 300;
   margin: 0;
   font-size: calc(20px + 2vmin);
@@ -93,6 +93,14 @@
   padding-bottom: 10vh;
   margin-left: 20vw;
   margin-right: 20vw;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: calc(10px + 2vmin);
+  color: #F0F0F0;
+  padding-left: 3vw;
 }
 
 footer {
