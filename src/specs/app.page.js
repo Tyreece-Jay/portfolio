@@ -9,6 +9,8 @@ export const page = {
     get name() { return elements.text("TYREECE SIMPSON") },
     get headline1() { return elements.text("Full-Stack Software Engineer") },
     get headline2() { return elements.text("Front-End Specialist") },
+    get github() { return elements.alt("GitHub") },
+    get linkedin() { return elements.alt("LinkedIn") },
     get downarrow() { return elements.alt("down arrow") },
     get abouttext() { return elements.label("about text") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },

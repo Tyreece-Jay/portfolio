@@ -1,4 +1,6 @@
 import Downarrow from './components/icons8-expand-arrow-96.png';
+import Github from './components/github.png';
+import Linkedin from './components/linkedin.png';
 import './app.css';
 
 function App() {
@@ -8,13 +10,19 @@ function App() {
         <h1>
           TYREECE SIMPSON
         </h1>
-        <h3>
-          Full-Stack Software Engineer
-        </h3>
-        <h3>
-          Front-End Specialist
-        </h3>
-        <img src={Downarrow} alt="down arrow" className="Down-arrow"/>
+        <div className='Headlines'>
+          <h3>
+            Full-Stack Software Engineer
+          </h3>
+          <h3>
+            Front-End Specialist
+          </h3>
+        </div>
+        <div className='Icons'>
+          <img src={Github} alt="GitHub" className="Github" />
+          <img src={Linkedin} alt="LinkedIn" className="Linkedin" />
+        </div>
+        <img src={Downarrow} alt="down arrow" className="Down-arrow" />
       </header>
       <body>
         <div>

@@ -2,32 +2,64 @@
   background-color: #2C3E2F;
 }
 
-.App-header{
+.App-header {
   min-height: 100vh;
   color: #F0F0F0;
   display: grid;
+  grid-template-areas:
+    "name icons"
+    "headlines icons"
+    "arrow arrow";
   margin-left: -7vw;
   background-image: url(./components/hey.png);
   background-repeat: no-repeat;
 }
 
 .App-header h1 {
+  grid-area: name;
   padding-top: 40vh;
   margin: 0;
   font-size: calc(50px + 2vmin);
   background: none;
   margin-left: 27vw;
+  align-self: end;
 }
 
-.App-header h3 {
-  font-weight: 300;
-  margin: 0;
-  font-size: calc(20px + 2vmin);
+.Headlines {
+  grid-area: headlines;
   background: none;
   margin-left: 27vw;
 }
 
+.Headlines h3 {
+  font-weight: 300;
+  margin: 0;
+  font-size: calc(20px + 2vmin);
+  background: none;
+}
+
+.Icons {
+  grid-area: icons;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-left: 15vw;
+  margin-bottom: 8vh;
+}
+
+.Github {
+  background: none;
+}
+
+.Linkedin {
+  padding-top: 4vh;
+  background: none;
+}
+
 .Down-arrow {
+  grid-area: arrow;
   padding-top: 20vh;
   justify-self: center;
   background: none;
