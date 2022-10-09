@@ -49,13 +49,13 @@
   margin-bottom: 8vh;
 }
 
-.Github {
+.Linkedin, .Linkedin img {
   background: none;
 }
 
-.Linkedin {
-  padding-top: 4vh;
+.Github, .Github img {
   background: none;
+  padding-top: 4vh;
 }
 
 .Down-arrow {

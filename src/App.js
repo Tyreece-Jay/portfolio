@@ -19,8 +19,8 @@ function App() {
           </h3>
         </div>
         <div className='Icons'>
-          <a href="https://github.com/Tyreece-Jay" className="Github" aria-label='github link'><img src={Github} alt="GitHub" className="Github" /></a>
-          <a href="https://linkedin.com/in/tyreece-simpson-287912160" className="Linkedin" aria-label='linkedin link'><img src={Linkedin} alt="LinkedIn" className="Linkedin" /></a>
+          <a href="https://linkedin.com/in/tyreece-simpson-287912160" className="Linkedin" aria-label='linkedin link'><img src={Linkedin} alt="LinkedIn" /></a>
+          <a href="https://github.com/Tyreece-Jay" className="Github" aria-label='github link'><img src={Github} alt="GitHub" /></a>
         </div>
         <img src={Downarrow} alt="down arrow" className="Down-arrow" />
       </header>
