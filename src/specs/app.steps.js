@@ -31,8 +31,9 @@ export async function skills_title() {
 };
 
 export async function skills() {
-  expect(page.skillsicon("react")).toBeInTheDocument();
-  expect(page.skillsname("REACT")).toBeInTheDocument();
+  expect(page.skillicon("react")).toBeInTheDocument();
+  expect(page.skillname("REACT")).toBeInTheDocument();
+  expect(page.skillprogress("react")).toBeInTheDocument();
 };
 
 export async function footer_text() {

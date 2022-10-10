@@ -4,6 +4,30 @@ import Linkedin from './components/linkedin.png';
 import React from './components/react.png';
 import './app.css';
 
+const ProgressBar = (props) => {
+  const { completed } = props;
+
+  const containerStyles = {
+    width: '100%',
+    backgroundColor: "#283528"
+  }
+
+  const fillerStyles = {
+    height: 7,
+    width: `${completed}%`,
+    backgroundColor: "#F0F0F0",
+    transition: 'width 1s ease-in-out'
+  }
+
+  return (
+    <div style={containerStyles}>
+      <div style={fillerStyles}>
+        <span></span>
+      </div>
+    </div>
+  );
+};
+
 function App() {
   return (
     <div>
@@ -34,6 +58,11 @@ function App() {
           <div className="Skills">
             <img src={React} alt="react" />
             <h4>REACT</h4>
+            <div className='Progress' aria-label='react'>
+              <h6>0%</h6>
+              <ProgressBar completed='60' />
+              <h6>100%</h6>
+            </div>
           </div>
         </div>
       </body>

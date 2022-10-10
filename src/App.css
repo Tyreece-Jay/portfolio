@@ -87,20 +87,40 @@
 }
 
 .Skills {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+  "icon skill"
+  "progress progress";
   justify-content: center;
+  align-content: center;
   height: 20vh;
   padding-bottom: 10vh;
   margin-left: 20vw;
   margin-right: 20vw;
-  display: flex;
-  align-items: center;
 }
 
-h4 {
+.Skills img {
+  grid-area: icon;
+}
+
+.Skills h4 {
+  grid-area: skill;
   font-size: calc(10px + 2vmin);
   color: #F0F0F0;
   padding-left: 3vw;
+}
+
+.Skills div {
+  grid-area: progress;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #F0F0F0;
+}
+
+.Skills h6 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer {
