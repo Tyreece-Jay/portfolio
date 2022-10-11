@@ -31,6 +31,10 @@ export async function skills_title() {
 };
 
 export async function skills() {
+  expect(page.skillicon("javascript and typescript")).toBeInTheDocument();
+  expect(page.skillname("JAVASCRIPT & TYPESCRIPT")).toBeInTheDocument();
+  expect(page.skillprogress("javascript and typescript")).toBeInTheDocument();
+  
   expect(page.skillicon("react")).toBeInTheDocument();
   expect(page.skillname("REACT")).toBeInTheDocument();
   expect(page.skillprogress("react")).toBeInTheDocument();

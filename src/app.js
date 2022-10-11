@@ -1,32 +1,10 @@
 import Downarrow from './components/icons8-expand-arrow-96.png';
 import Github from './components/github.png';
-import Linkedin from './components/linkedin.png';
+import LinkedIn from './components/linkedin.png';
 import React from './components/react.png';
+import JavaScriptAndTypeScript from './components/javascript-typescript.png';
 import './app.css';
-
-const ProgressBar = (props) => {
-  const { completed } = props;
-
-  const containerStyles = {
-    width: '100%',
-    backgroundColor: "#283528"
-  }
-
-  const fillerStyles = {
-    height: 7,
-    width: `${completed}%`,
-    backgroundColor: "#F0F0F0",
-    transition: 'width 1s ease-in-out'
-  }
-
-  return (
-    <div style={containerStyles}>
-      <div style={fillerStyles}>
-        <span></span>
-      </div>
-    </div>
-  );
-};
+import { ProgressBar } from './ProgressBar';
 
 function App() {
   return (
@@ -44,7 +22,7 @@ function App() {
           </h2>
         </div>
         <div className='Icons'>
-          <a href="https://linkedin.com/in/tyreece-simpson-287912160" className="Linkedin" aria-label='linkedin link'><img src={Linkedin} alt="LinkedIn" /></a>
+          <a href="https://linkedin.com/in/tyreece-simpson-287912160" className="Linkedin" aria-label='linkedin link'><img src={LinkedIn} alt="LinkedIn" /></a>
           <a href="https://github.com/Tyreece-Jay" className="Github" aria-label='github link'><img src={Github} alt="GitHub" /></a>
         </div>
         <img src={Downarrow} alt="down arrow" className="Down-arrow" />
@@ -56,12 +34,23 @@ function App() {
         <div>
           <h3 className="Skills-header">PROFESSIONAL SKILLS</h3>
           <div className="Skills">
-            <img src={React} alt="react" />
-            <h4>REACT</h4>
-            <div className='Progress' aria-label='react'>
-              <h6>0%</h6>
-              <ProgressBar completed='60' />
-              <h6>100%</h6>
+            <div className="Skill">
+              <img src={JavaScriptAndTypeScript} alt="javascript and typescript" />
+              <h4>JAVASCRIPT & TYPESCRIPT</h4>
+              <div className='Progress' aria-label='javascript and typescript'>
+                <h6>0%</h6>
+                <ProgressBar completed='60' />
+                <h6>100%</h6>
+              </div>
+            </div>
+            <div className="Skill">
+              <img src={React} alt="react" />
+              <h4>REACT</h4>
+              <div className='Progress' aria-label='react'>
+                <h6>0%</h6>
+                <ProgressBar completed='60' />
+                <h6>100%</h6>
+              </div>
             </div>
           </div>
         </div>
