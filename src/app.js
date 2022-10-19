@@ -1,10 +1,10 @@
-import Downarrow from './components/icons8-expand-arrow-96.png';
-import Github from './components/github.png';
-import LinkedIn from './components/linkedin.png';
-import React from './components/react.png';
-import JavaScriptAndTypeScript from './components/javascript-typescript.png';
+import Downarrow from './images/icons8-expand-arrow-96.png';
+import Github from './images/github.png';
+import LinkedIn from './images/linkedin.png';
+import React from './images/react.png';
+import JavaScriptAndTypeScript from './images/javascript-typescript.png';
 import './app.css';
-import { ProgressBar } from './ProgressBar';
+import { ProgressBar } from './progressbar';
 
 function App() {
   return (
@@ -47,6 +47,15 @@ function App() {
               <img src={React} alt="react" />
               <h4>REACT</h4>
               <div className='Progress' aria-label='react'>
+                <h6>0%</h6>
+                <ProgressBar completed='60' />
+                <h6>100%</h6>
+              </div>
+            </div>
+            <div className="Skill">
+              <img src={React} alt="html and css" />
+              <h4>HTML & CSS</h4>
+              <div className='Progress' aria-label='html and css'>
                 <h6>0%</h6>
                 <ProgressBar completed='60' />
                 <h6>100%</h6>
