@@ -4,7 +4,7 @@ import LinkedIn from './images/linkedin.png';
 import React from './images/react.png';
 import JavaScriptAndTypeScript from './images/javascript-typescript.png';
 import './app.css';
-import { ProgressBar } from './progressbar';
+import { ProgressBar } from './progressbar.tsx';
 
 function App() {
   return (
@@ -35,9 +35,9 @@ function App() {
           <h3 className="Skills-header">PROFESSIONAL SKILLS</h3>
           <div className="Skills">
             <div className="Skill">
-              <img src={JavaScriptAndTypeScript} alt="javascript and typescript" />
+              <img src={JavaScriptAndTypeScript} alt="javascript & typescript" />
               <h4>JAVASCRIPT & TYPESCRIPT</h4>
-              <div className='Progress' aria-label='javascript and typescript'>
+              <div className='Progress' aria-label='javascript & typescript'>
                 <h6>0%</h6>
                 <ProgressBar completed='60' />
                 <h6>100%</h6>
@@ -53,9 +53,9 @@ function App() {
               </div>
             </div>
             <div className="Skill">
-              <img src={React} alt="html and css" />
+              <img src={React} alt="html & css" />
               <h4>HTML & CSS</h4>
-              <div className='Progress' aria-label='html and css'>
+              <div className='Progress' aria-label='html & css'>
                 <h6>0%</h6>
                 <ProgressBar completed='60' />
                 <h6>100%</h6>

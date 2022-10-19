@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import React from 'react';
 import App from '../app';
 
 export const page = {
@@ -18,13 +19,13 @@ export const page = {
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
     get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
 
-    skillicon(text) {return elements.alt(text)},
-    skillname(text) {return elements.text(text)},
-    skillprogress(text) {return elements.label(text)}
+    skillicon(text: string) {return elements.alt(text)},
+    skillname(text: string) {return elements.text(text)},
+    skillprogress(text: string) {return elements.label(text)}
 }
 
 const elements = {
-    text(text) { return screen.getByText(text)},
-    alt(text) { return screen.getByAltText(text)},
-    label(text) { return screen.getByLabelText(text)}
+    text(text: string) { return screen.getByText(text)},
+    alt(text: string) { return screen.getByAltText(text)},
+    label(text: string) { return screen.getByLabelText(text)}
 }
