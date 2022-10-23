@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProgressBar = (props) => {
+export const ProgressBar = (props: { completed: any; }) => {
   const { completed } = props;
 
   const containerStyles = {

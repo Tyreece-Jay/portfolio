@@ -31,17 +31,9 @@ export async function skills_title() {
 };
 
 export async function skills() {
-  expect(page.skillicon("javascript & typescript")).toBeInTheDocument();
-  expect(page.skillname("JAVASCRIPT & TYPESCRIPT")).toBeInTheDocument();
-  expect(page.skillprogress("javascript & typescript")).toBeInTheDocument();
-  
-  expect(page.skillicon("react")).toBeInTheDocument();
-  expect(page.skillname("REACT")).toBeInTheDocument();
-  expect(page.skillprogress("react")).toBeInTheDocument();
-
-  expect(page.skillicon("html & css")).toBeInTheDocument();
-  expect(page.skillname("HTML & CSS")).toBeInTheDocument();
-  expect(page.skillprogress("html & css")).toBeInTheDocument();
+  skill("javascript & typescript")
+  skill("react")
+  skill("html & css")
 };
 
 export async function footer_text() {
@@ -54,4 +46,10 @@ export async function clickable_linkedin_icon() {
 
 export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
+}
+
+async function skill(name: string) {
+  expect(page.skillicon(name)).toBeInTheDocument();
+  expect(page.skillname(name.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(name)).toBeInTheDocument();
 }
