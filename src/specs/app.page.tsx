@@ -19,6 +19,7 @@ export const page = {
     get abouttitle() { return elements.text("ABOUT") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
     get experienceandeducationtitle() { return elements.text("EXPERIENCE & EDUCATION") },
+    get contacttitle() { return elements.text("CONTACT ME") },
     get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
 
     skillname(text: string) {return elements.text(text)},

@@ -2,6 +2,7 @@ import './app.styles.css';
 import About from './components/about';
 import Skills from './components/skills';
 import EducationAndExperience from './components/educationandexperience';
+import Contact from './components/contact';
 import React from 'react';
 
 const Downarrow = require('./images/icons8-expand-arrow-96.png');
@@ -27,6 +28,7 @@ export default function App() {
         <About />
         <Skills />
         <EducationAndExperience />
+        <Contact />
       </body>
       <footer>
         Copyright © 2022 Tyreece Simpson - All Rights Reserved.

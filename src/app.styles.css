@@ -87,11 +87,9 @@
   padding-left: 3vh;
 }
 
-.Skills-header {
+.Skills-title {
   font-size: calc(48px);
   color: #F6F7EB;
-  margin-left: 20vw;
-  margin-right: 20vw;
   text-align: center;
 }
 
@@ -158,7 +156,6 @@
   margin-top: 32px;
 }
 
-
 .Place {
   font-weight: bold;
 }
@@ -170,6 +167,12 @@
 ul, li {
   background-color: #F6F7EB;
   margin: 0;
+}
+
+.Contact-title {
+  font-size: calc(48px);
+  color: #F6F7EB;
+  text-align: center;
 }
 
 footer {

@@ -78,6 +78,10 @@ export async function education_text() {
   expect(page.text("education text")).toBeInTheDocument();
 };
 
+export async function contact_title() {
+  expect(page.contacttitle).toBeInTheDocument();
+};
+
 export async function footer_text() {
   expect(page.footertext).toBeInTheDocument();
 };

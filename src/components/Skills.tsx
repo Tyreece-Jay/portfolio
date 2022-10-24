@@ -4,7 +4,7 @@ import Skill from './skill';
 
 export default function Skills() {
   return <div>
-    <h3 className="Skills-header">PROFESSIONAL SKILLS</h3>
+    <h3 className="Skills-title">PROFESSIONAL SKILLS</h3>
     <div className="Skills">
       {Skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
       {Skill("react", SkillPercentage.React)}
