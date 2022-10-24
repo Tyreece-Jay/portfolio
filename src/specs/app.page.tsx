@@ -14,12 +14,13 @@ export const page = {
     get linkedinlink() { return elements.label("linkedin link") },
     get github() { return elements.alt("GitHub") },
     get githublink() { return elements.label("github link") },
+    get email() { return elements.alt("Email") },
     get downarrow() { return elements.alt("down arrow") },
+    get aboutheader() { return elements.text("ABOUT") },
     get abouttext() { return elements.label("about text") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
     get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
 
-    skillicon(text: string) {return elements.alt(text)},
     skillname(text: string) {return elements.text(text)},
     skillprogress(text: string) {return elements.label(text)}
 }

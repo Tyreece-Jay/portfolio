@@ -16,10 +16,15 @@ export async function headlines() {
 export async function icons() {
   expect(page.github).toBeInTheDocument();
   expect(page.linkedin).toBeInTheDocument();
+  expect(page.email).toBeInTheDocument();
 };
 
 export async function down_arrow() {
   expect(page.downarrow).toBeInTheDocument();
+};
+
+export async function about_header() {
+  expect(page.aboutheader).toBeInTheDocument();
 };
 
 export async function about_text() {
