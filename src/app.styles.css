@@ -2,6 +2,10 @@
   background-color: #D65C3B;
 }
 
+html{
+  border: solid #F6F7EB 40px;
+}
+
 .App-header {
   min-height: 100vh;
   color: #F6F7EB;
@@ -10,7 +14,6 @@
     "name"
     "headlines"
     "arrow";
-  margin-left: -7vw;
   background-image: url(./images/hey.png);
   background-repeat: no-repeat;
   text-align: center;
@@ -20,7 +23,6 @@
   grid-area: name;
   padding-top: 30vh;
   margin: 0;
-  margin-left: 7vw;
   font-size: calc(96px);
   background: none;
   align-self: end;
@@ -29,7 +31,6 @@
 .Headlines {
   grid-area: headlines;
   background: none;
-  margin-left: 7vw;
 }
 
 .Headlines h2 {
@@ -44,7 +45,6 @@
   padding-top: 20vh;
   justify-self: center;
   background: none;
-  margin-left: 7vw;
 }
 
 .About {
@@ -79,24 +79,36 @@
 .Icons {
   grid-area: icons;
   display: flex;
-  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .Icons, a, img {
   background: none;
-  padding-left: 3vh;
+}
+
+.Middle-icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Skills {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
+  padding: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .Skills-title {
   font-size: calc(48px);
   color: #F6F7EB;
   text-align: center;
-}
-
-.Skills {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-auto-columns: 1fr;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .Skill {
@@ -106,7 +118,6 @@
   "progress";
   padding-bottom: 7vh;
   width: 40vw;
-  padding-left: 200px;
 }
 
 .Skill h4 {
@@ -174,20 +185,21 @@ ul, li {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 100px;
 }
 
 .Contact-title {
   font-size: calc(48px);
   color: #F6F7EB;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .Contact-button {
   color: #D65C3B;
   background-color: #F6F7EB;
   text-align: center;
-  width: 500px;
-  padding: 30px;
-  margin-bottom: 50px;
+  padding: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -195,13 +207,13 @@ ul, li {
 }
 
 .Contact-button p {
-  font-size: calc(32px);
+  font-size: calc(20px);
   text-align: center;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 footer {
-  padding: 25px;
+  padding-top: 40px;
   color: #D65C3B;
   background-color: #F6F7EB;
   text-align: center;
