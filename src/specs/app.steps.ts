@@ -49,7 +49,6 @@ export async function clickable_github_icon() {
 }
 
 async function skill(name: string) {
-  expect(page.skillicon(name)).toBeInTheDocument();
   expect(page.skillname(name.toUpperCase())).toBeInTheDocument();
   expect(page.skillprogress(name)).toBeInTheDocument();
 }

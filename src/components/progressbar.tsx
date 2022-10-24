@@ -5,13 +5,14 @@ export const ProgressBar = (props: { completed: any; }) => {
 
   const containerStyles = {
     width: '100%',
-    backgroundColor: "#283528"
+    backgroundColor: "#3A3E41",
+    height: 20
   };
 
   const fillerStyles = {
-    height: 8,
+    height: 20,
     width: `${completed}%`,
-    backgroundColor: "#F0F0F0",
+    backgroundColor: "#F6F7EB",
     transition: 'width 1s ease-in-out'
   };
 
