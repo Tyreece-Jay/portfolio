@@ -23,20 +23,16 @@ html{
   grid-area: name;
   padding-top: 30vh;
   margin: 0;
-  font-size: calc(96px);
+  font-size: calc(48px);
   background: none;
   align-self: end;
+  color: #3A3E41;
 }
 
-.Headlines {
+.Headlines, h2 {
   grid-area: headlines;
-  background: none;
-}
-
-.Headlines h2 {
-  font-weight: 300;
   margin: 0;
-  font-size: calc(40px);
+  font-size: calc(64px);
   background: none;
 }
 
