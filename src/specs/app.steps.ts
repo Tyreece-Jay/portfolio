@@ -35,10 +35,19 @@ export async function skills_title() {
   expect(page.skillstitle).toBeInTheDocument();
 };
 
-export async function skills() {
-  skill("javascript & typescript")
-  skill("react")
-  skill("html & css")
+export async function javascript_and_typescript() {
+  expect(page.skillname("JAVASCRIPT & TYPESCRIPT")).toBeInTheDocument();
+  expect(page.skillprogress("javascript & typescript")).toBeInTheDocument();
+};
+
+export async function react() {
+  expect(page.skillname("REACT")).toBeInTheDocument();
+  expect(page.skillprogress("react")).toBeInTheDocument();
+};
+
+export async function html_and_css() {
+  expect(page.skillname("HTML & CSS")).toBeInTheDocument();
+  expect(page.skillprogress("html & css")).toBeInTheDocument();
 };
 
 export async function experience_title() {
@@ -67,9 +76,4 @@ export async function clickable_linkedin_icon() {
 
 export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
-}
-
-async function skill(name: string) {
-  expect(page.skillname(name.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(name)).toBeInTheDocument();
 }
