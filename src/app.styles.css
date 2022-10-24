@@ -117,7 +117,7 @@
   margin: 0;
 }
 
-.Experience {
+.Experience-and-education {
   background-color: #F6F7EB;
   color: #3A3E41;
   padding: 100px;
@@ -125,18 +125,19 @@
   padding-right: 200px;
   display: grid;
   grid-template-areas:
-  "experiencetitle image"
-  "experiencetext image";
+  "experienceandeducationtitle image"
+  "experiencetext image"
+  "educationtext image";
   align-items: center;
 }
 
-.Experience-title {
-  grid-area: experiencetitle;
+.Experience-and-education-title {
+  grid-area: experienceandeducationtitle;
   font-size: calc(48px);
   color: #3A3E41;
   background-color: #F6F7EB;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .Experience-text, p {
@@ -146,6 +147,16 @@
   font-size: calc(16px);
   margin: 0;
 }
+
+.Education-text {
+  grid-area: educationtext;
+  background-color: #F6F7EB;
+  width: 60%;
+  font-size: calc(16px);
+  margin: 0;
+  margin-top: 32px;
+}
+
 
 .Place {
   font-weight: bold;

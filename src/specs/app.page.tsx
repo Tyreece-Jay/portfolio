@@ -17,16 +17,15 @@ export const page = {
     get email() { return elements.alt("Email") },
     get downarrow() { return elements.alt("down arrow") },
     get abouttitle() { return elements.text("ABOUT") },
-    get abouttext() { return elements.label("about text") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
-    get experiencetitle() { return elements.text("EXPERIENCE & EDUCATION") },
-    get experienceplace() { return elements.text("First Databank - Software Developer") },
-    get experiencedates() { return elements.text("SEPTEMBER 2018 - PRESENT") },
-    get experiencetext() { return elements.label("experience text") },
+    get experienceandeducationtitle() { return elements.text("EXPERIENCE & EDUCATION") },
     get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
 
     skillname(text: string) {return elements.text(text)},
-    skillprogress(text: string) {return elements.label(text)}
+    skillprogress(text: string) {return elements.label(text)},
+    place(text: string) { return elements.text(text) },
+    dates(text: string) { return elements.text(text) },
+    text(text: string) { return elements.label(text) },
 }
 
 const elements = {

@@ -28,7 +28,7 @@ export async function about_title() {
 };
 
 export async function about_text() {
-  expect(page.abouttext).toBeInTheDocument();
+  expect(page.text("about text")).toBeInTheDocument();
 };
 
 export async function skills_title() {
@@ -50,20 +50,32 @@ export async function html_and_css() {
   expect(page.skillprogress("html & css")).toBeInTheDocument();
 };
 
-export async function experience_title() {
-  expect(page.experiencetitle).toBeInTheDocument();
+export async function experience_and_education_title() {
+  expect(page.experienceandeducationtitle).toBeInTheDocument();
 };
 
 export async function experience_place() {
-  expect(page.experienceplace).toBeInTheDocument();
+  expect(page.place("First Databank - Software Developer")).toBeInTheDocument();
 };
 
 export async function experience_dates() {
-  expect(page.experiencedates).toBeInTheDocument();
+  expect(page.dates("SEPTEMBER 2018 - PRESENT")).toBeInTheDocument();
 };
 
 export async function experience_text() {
-  expect(page.experiencetext).toBeInTheDocument();
+  expect(page.text("experience text")).toBeInTheDocument();
+};
+
+export async function education_place() {
+  expect(page.place("The University of Exeter - BSC, Digital & Technology Solutions with proficiency in Software Engineering")).toBeInTheDocument();
+};
+
+export async function education_dates() {
+  expect(page.dates("SEPTEMBER 2018 - MAY 2022")).toBeInTheDocument();
+};
+
+export async function education_text() {
+  expect(page.text("education text")).toBeInTheDocument();
 };
 
 export async function footer_text() {
