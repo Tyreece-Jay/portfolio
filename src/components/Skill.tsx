@@ -1,8 +1,8 @@
 import React from 'react';
 import { ProgressBar } from './progressbar';
-import { SkillPercentage } from './SkillPercentage';
+import { SkillPercentage } from './skillpercentage';
 
-export function Skill(name: string, percentage: SkillPercentage) {
+export default function Skill(name: string, percentage: SkillPercentage) {
   return <div className="Skill">
     <h4>{name.toUpperCase()}</h4>
     <div className='Progress' aria-label={name}>
