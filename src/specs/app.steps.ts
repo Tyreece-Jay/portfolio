@@ -82,6 +82,11 @@ export async function contact_title() {
   expect(page.contacttitle).toBeInTheDocument();
 };
 
+export async function contact_button() {
+  expect(page.contactbutton).toHaveAttribute('href', '')
+  expect(page.contactemail).toBeInTheDocument();
+};
+
 export async function footer_text() {
   expect(page.footertext).toBeInTheDocument();
 };
