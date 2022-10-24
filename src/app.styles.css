@@ -55,13 +55,13 @@
   padding-right: 200px;
   display: grid;
   grid-template-areas:
-  "header icons"
-  "text icons";
+  "abouttitle icons"
+  "abouttext icons";
   align-items: center;
 }
 
-.About-header {
-  grid-area: header;
+.About-title {
+  grid-area: abouttitle;
   font-size: calc(48px);
   color: #3A3E41;
   background-color: #F6F7EB;
@@ -69,7 +69,7 @@
 }
 
 .About-text {
-  grid-area: text;
+  grid-area: abouttext;
   background-color: #F6F7EB;
   width: 60%;
   font-size: calc(16px);
@@ -114,6 +114,49 @@
   grid-area: skill;
   font-size: calc(20px);
   color: #F0F0F0;
+  margin: 0;
+}
+
+.Experience {
+  background-color: #F6F7EB;
+  color: #3A3E41;
+  padding: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: grid;
+  grid-template-areas:
+  "experiencetitle image"
+  "experiencetext image";
+  align-items: center;
+}
+
+.Experience-title {
+  grid-area: experiencetitle;
+  font-size: calc(48px);
+  color: #3A3E41;
+  background-color: #F6F7EB;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.Experience-text, p {
+  grid-area: experiencetext;
+  background-color: #F6F7EB;
+  width: 60%;
+  font-size: calc(16px);
+  margin: 0;
+}
+
+.Place {
+  font-weight: bold;
+}
+
+.Dates {
+  font-weight: 300;
+}
+
+ul, li {
+  background-color: #F6F7EB;
   margin: 0;
 }
 

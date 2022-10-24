@@ -23,8 +23,8 @@ export async function down_arrow() {
   expect(page.downarrow).toBeInTheDocument();
 };
 
-export async function about_header() {
-  expect(page.aboutheader).toBeInTheDocument();
+export async function about_title() {
+  expect(page.abouttitle).toBeInTheDocument();
 };
 
 export async function about_text() {
@@ -39,6 +39,22 @@ export async function skills() {
   skill("javascript & typescript")
   skill("react")
   skill("html & css")
+};
+
+export async function experience_title() {
+  expect(page.experiencetitle).toBeInTheDocument();
+};
+
+export async function experience_place() {
+  expect(page.experienceplace).toBeInTheDocument();
+};
+
+export async function experience_dates() {
+  expect(page.experiencedates).toBeInTheDocument();
+};
+
+export async function experience_text() {
+  expect(page.experiencetext).toBeInTheDocument();
 };
 
 export async function footer_text() {

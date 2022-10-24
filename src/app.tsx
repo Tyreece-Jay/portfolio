@@ -23,13 +23,31 @@ export default function App() {
         <img src={Downarrow} alt="down arrow" className="Down-arrow" />
       </header>
       <body>
-        <div className="About" >
-        <h3 className="About-header">ABOUT</h3>
+        <div className="About">
+          <h3 className="About-title">ABOUT</h3>
           <p className="About-text" aria-label='about text'>Constantly sharpening my knowledge as a full-stack developer whilst having a real passion for UI/UX design and innovation. My curios and inquisitive mindset translates extremely well to software engineering and has allowed me to become the proficient software developer I am today. Well versed in TypeScript, React, C#, .NetCore, whilst also having limited knowledge in many more.</p>
-          <Icons/>
+          <Icons />
         </div>
-        <Skills/>
+        <Skills />
       </body>
+      <div className="Experience">
+        <h3 className="Experience-title">EXPERIENCE & EDUCATION</h3>
+        <div className="Experience-text">
+          <p className="Place">First Databank - Software Developer</p>
+          <p className="Dates">SEPTEMBER 2018 - PRESENT</p>
+          <ul aria-label='experience text'>
+            <li>
+            Improved the AnalyseRx solution as part of a team during its early stages, which helped produce a ~300% increase in its customer base.
+            </li>
+            <li>
+            Solely designed and developed a dashboard to monitor certain metrics to indicate the health of the AnalyseRx solution; this provided ~5% increase in development efficiencies.
+            </li>
+            <li>
+            Currently part of a project to recreate an in-house system used to author medical content. This is projected to improve content authoring efficiencies by ~50%.
+            </li>
+          </ul>
+        </div>
+      </div>
       <footer>
         Copyright © 2022 Tyreece Simpson - All Rights Reserved.
       </footer>
