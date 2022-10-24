@@ -55,7 +55,11 @@ export async function experience_and_education_title() {
 };
 
 export async function experience_place() {
-  expect(page.place("First Databank - Software Developer")).toBeInTheDocument();
+  expect(page.place("First Databank")).toBeInTheDocument();
+};
+
+export async function experience_occupation() {
+  expect(page.place("- Software Developer")).toBeInTheDocument();
 };
 
 export async function experience_dates() {
@@ -67,8 +71,13 @@ export async function experience_text() {
 };
 
 export async function education_place() {
-  expect(page.place("The University of Exeter - BSC, Digital & Technology Solutions with proficiency in Software Engineering")).toBeInTheDocument();
+  expect(page.place("The University of Exeter")).toBeInTheDocument();
 };
+
+export async function education_occupation() {
+  expect(page.place("- BSC, Digital & Technology Solutions with proficiency in Software Engineering")).toBeInTheDocument();
+};
+
 
 export async function education_dates() {
   expect(page.dates("SEPTEMBER 2018 - MAY 2022")).toBeInTheDocument();

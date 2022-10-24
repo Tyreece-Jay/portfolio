@@ -150,11 +150,11 @@ html{
   margin-bottom: 32px;
 }
 
-.Experience-text, p {
+.Experience-text, span, p {
   grid-area: experiencetext;
   background-color: #F6F7EB;
   width: 60%;
-  font-size: calc(16px);
+  font-size: calc(20px);
   margin: 0;
 }
 
@@ -162,13 +162,16 @@ html{
   grid-area: educationtext;
   background-color: #F6F7EB;
   width: 60%;
-  font-size: calc(16px);
   margin: 0;
   margin-top: 32px;
 }
 
 .Place {
   font-weight: bold;
+}
+
+.Occupation {
+  font-style: italic;
 }
 
 .Dates {
@@ -178,6 +181,7 @@ html{
 ul, li {
   background-color: #F6F7EB;
   margin: 0;
+  font-size: calc(16px);
 }
 
 .Contact {

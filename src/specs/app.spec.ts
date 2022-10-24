@@ -1,4 +1,4 @@
-import { name, headlines, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button } from './app.steps'
+import { name, headlines, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, education_occupation } from './app.steps'
 
 describe('renders header and footer', () => {
   test('name', name);
@@ -23,9 +23,11 @@ describe('renders skills', () => {
 describe('renders experience and education', () => {
   test('title', experience_and_education_title);
   test('experience place', experience_place);
+  test('experience occupation', experience_occupation);
   test('experience dates', experience_dates);
   test('experience text', experience_text);
   test('education place', education_place);
+  test('education occupation', education_occupation);
   test('education dates', education_dates);
   test('education text', education_text);
 })
