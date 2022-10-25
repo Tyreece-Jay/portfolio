@@ -10,11 +10,11 @@ const Downarrow = require('./images/icons8-expand-arrow-96.png');
 export default function App() {
   return (
     <div>
-      <header className="App-header">
+      <header className="Header">
         <h1>
           TYREECE SIMPSON
         </h1>
-        <div className='Headlines'>
+        <div className='Header-title'>
           <h2>
             Full-Stack Software Engineer
           </h2>

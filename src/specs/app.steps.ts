@@ -4,13 +4,13 @@ beforeEach(() => {
   page.render();
 });
 
-export async function name() {
-  expect(page.name).toBeInTheDocument();
+export async function header_headline() {
+  expect(page.headerheadline).toBeInTheDocument();
 };
 
-export async function headlines() {
-  expect(page.headline1).toBeInTheDocument();
-  expect(page.headline2).toBeInTheDocument();
+export async function header_title() {
+  expect(page.headertitle1).toBeInTheDocument();
+  expect(page.headertitle2).toBeInTheDocument();
 };
 
 export async function icons() {
@@ -21,6 +21,10 @@ export async function icons() {
 
 export async function down_arrow() {
   expect(page.downarrow).toBeInTheDocument();
+};
+
+export async function about_headline() {
+  expect(page.aboutheadline).toBeInTheDocument();
 };
 
 export async function about_title() {

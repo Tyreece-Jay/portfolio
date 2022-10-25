@@ -6,7 +6,7 @@ html{
   border: solid #F6F7EB 40px;
 }
 
-.App-header {
+.Header {
   min-height: 100vh;
   color: #F6F7EB;
   display: grid;
@@ -19,7 +19,7 @@ html{
   text-align: center;
 }
 
-.App-header h1 {
+.Header h1 {
   grid-area: name;
   padding-top: 30vh;
   margin: 0;
@@ -29,7 +29,7 @@ html{
   color: #3A3E41;
 }
 
-.Headlines, h2 {
+.Header-title, h2 {
   grid-area: headlines;
   margin: 0;
   font-size: calc(64px);
@@ -51,9 +51,18 @@ html{
   padding-right: 200px;
   display: grid;
   grid-template-areas:
+  "aboutheadline icons"
   "abouttitle icons"
   "abouttext icons";
   align-items: center;
+}
+
+.About-headline {
+  grid-area: aboutheadline;
+  font-size: calc(20px);
+  color: #D65C3B;
+  background-color: #F6F7EB;
+  margin: 0;
 }
 
 .About-title {
