@@ -40,38 +40,27 @@ export async function skills_title() {
 };
 
 export async function javascript_and_typescript() {
-  expect(page.skillname("JAVASCRIPT & TYPESCRIPT")).toBeInTheDocument();
-  expect(page.skillprogress("javascript & typescript")).toBeInTheDocument();
+  expectSkill("javascript & typescript")
 };
 
 export async function react() {
-  const skill: string = "react"
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
+  expectSkill("react")
 };
 
 export async function html_and_css() {
-  const skill: string = "html & css"
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
+  expectSkill("html & css")
 };
 
 export async function c_sharp() {
-  const skill: string = "c#"
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
+  expectSkill("c#")
 };
 
 export async function sql() {
-  const skill: string = "sql"
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
+  expectSkill("sql")
 };
 
 export async function dot_net() {
-  const skill: string = ".net"
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
+  expectSkill(".net")
 };
 
 export async function experience_and_education_title() {
@@ -102,7 +91,6 @@ export async function education_occupation() {
   expect(page.place("- BSC, Digital & Technology Solutions with proficiency in Software Engineering")).toBeInTheDocument();
 };
 
-
 export async function education_dates() {
   expect(page.dates("SEPTEMBER 2018 - MAY 2022")).toBeInTheDocument();
 };
@@ -130,4 +118,9 @@ export async function clickable_linkedin_icon() {
 
 export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
+}
+
+async function expectSkill(skill: string) {
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
 }
