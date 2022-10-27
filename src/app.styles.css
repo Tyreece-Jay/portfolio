@@ -201,6 +201,12 @@ ul, li {
   padding: 100px;
 }
 
+.Contact-headline {
+  font-size: calc(20px);
+  color: #3A3E41;
+  margin: 0;
+}
+
 .Contact-title {
   font-size: calc(48px);
   color: #F6F7EB;

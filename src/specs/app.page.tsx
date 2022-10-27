@@ -22,6 +22,7 @@ export const page = {
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
     get experienceandeducationheadline() { return elements.text("Never Stop Learning") },
     get experienceandeducationtitle() { return elements.text("EXPERIENCE & EDUCATION") },
+    get contactheadline() { return elements.text("Don’t Be A Stranger") },
     get contacttitle() { return elements.text("CONTACT ME") },
     get contactbutton() { return elements.label("contact") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },

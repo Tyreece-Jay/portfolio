@@ -107,6 +107,10 @@ export async function education_text() {
   expect(page.text("education text")).toBeInTheDocument();
 };
 
+export async function contact_headline() {
+  expect(page.experienceandeducationheadline).toBeInTheDocument();
+};
+
 export async function contact_title() {
   expect(page.contacttitle).toBeInTheDocument();
 };
