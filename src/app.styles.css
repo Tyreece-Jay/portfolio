@@ -11,8 +11,8 @@ html{
   color: #F6F7EB;
   display: grid;
   grid-template-areas:
-    "name"
-    "headlines"
+    "headerheadline"
+    "headertitle"
     "arrow";
   background-image: url(./images/hey.png);
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ html{
 }
 
 .Header h1 {
-  grid-area: name;
+  grid-area: headerheadline;
   padding-top: 30vh;
   margin: 0;
   font-size: calc(48px);
@@ -30,7 +30,7 @@ html{
 }
 
 .Header-title, h2 {
-  grid-area: headlines;
+  grid-area: headertitle;
   margin: 0;
   font-size: calc(64px);
   background: none;
@@ -67,6 +67,7 @@ html{
 
 .About-title {
   grid-area: abouttitle;
+  font-weight: bold;
   font-size: calc(48px);
   color: #3A3E41;
   background-color: #F6F7EB;
