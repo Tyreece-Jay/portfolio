@@ -67,6 +67,10 @@ export async function dot_net() {
   expectSkill(".net")
 };
 
+export async function experience_and_education_headline() {
+  expect(page.experienceandeducationheadline).toBeInTheDocument();
+};
+
 export async function experience_and_education_title() {
   expect(page.experienceandeducationtitle).toBeInTheDocument();
 };

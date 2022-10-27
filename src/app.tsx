@@ -1,7 +1,7 @@
 import './app.styles.css';
 import About from './components/about';
 import Skills from './components/skills';
-import EducationAndExperience from './components/educationandexperience';
+import ExperienceAndEducation from './components/experienceandeducation';
 import Contact from './components/contact';
 import React from 'react';
 
@@ -27,7 +27,7 @@ export default function App() {
       <body>
         <About />
         <Skills />
-        <EducationAndExperience />
+        <ExperienceAndEducation />
         <Contact />
       </body>
       <footer>

@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default function EducationAndExperience() {
+export default function ExperienceAndEducation() {
   return <div className="Experience-and-education">
+    <h3 className="Experience-and-education-headline">Never Stop Learning</h3>
     <h3 className="Experience-and-education-title">EXPERIENCE & EDUCATION</h3>
     <div className="Experience-text">
       <span className="Place">First Databank </span>

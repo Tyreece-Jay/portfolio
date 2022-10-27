@@ -139,10 +139,19 @@ html{
   padding-right: 200px;
   display: grid;
   grid-template-areas:
+  "experienceandeducationheadline image"
   "experienceandeducationtitle image"
   "experiencetext image"
   "educationtext image";
   align-items: center;
+}
+
+.Experience-and-education-headline {
+  grid-area: experienceandeducationheadline;
+  font-size: calc(20px);
+  color: #D65C3B;
+  background-color: #F6F7EB;
+  margin: 0;
 }
 
 .Experience-and-education-title {
