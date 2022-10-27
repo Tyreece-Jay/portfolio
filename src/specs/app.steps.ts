@@ -35,6 +35,10 @@ export async function about_text() {
   expect(page.text("about text")).toBeInTheDocument();
 };
 
+export async function skills_headline() {
+  expect(page.skillsheadline).toBeInTheDocument();
+};
+
 export async function skills_title() {
   expect(page.skillstitle).toBeInTheDocument();
 };

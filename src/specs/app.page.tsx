@@ -18,6 +18,7 @@ export const page = {
     get downarrow() { return elements.alt("down arrow") },
     get aboutheadline() { return elements.text("I’m An Open Book") },
     get abouttitle() { return elements.text("ABOUT") },
+    get skillsheadline() { return elements.text("Knowledge Is Everything") },
     get skillstitle() { return elements.text("PROFESSIONAL SKILLS") },
     get experienceandeducationtitle() { return elements.text("EXPERIENCE & EDUCATION") },
     get contacttitle() { return elements.text("CONTACT ME") },

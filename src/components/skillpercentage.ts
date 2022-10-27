@@ -1,8 +1,8 @@
 export const enum SkillPercentage {
-  JavascriptAndTypescript = "80",
-  React = "60",
-  HtmlAndCss = "40",
-  CSharp = "40",
-  Sql = "40",
-  DotNet = "40"
+  JavascriptAndTypescript = "69",
+  React = "67",
+  HtmlAndCss = "74",
+  CSharp = "58",
+  Sql = "54",
+  DotNet = "50"
 }
