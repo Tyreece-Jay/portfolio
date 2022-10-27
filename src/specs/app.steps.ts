@@ -45,13 +45,33 @@ export async function javascript_and_typescript() {
 };
 
 export async function react() {
-  expect(page.skillname("REACT")).toBeInTheDocument();
-  expect(page.skillprogress("react")).toBeInTheDocument();
+  const skill: string = "react"
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
 };
 
 export async function html_and_css() {
-  expect(page.skillname("HTML & CSS")).toBeInTheDocument();
-  expect(page.skillprogress("html & css")).toBeInTheDocument();
+  const skill: string = "html & css"
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
+};
+
+export async function c_sharp() {
+  const skill: string = "c#"
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
+};
+
+export async function sql() {
+  const skill: string = "sql"
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
+};
+
+export async function dot_net() {
+  const skill: string = ".net"
+  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillprogress(skill)).toBeInTheDocument();
 };
 
 export async function experience_and_education_title() {

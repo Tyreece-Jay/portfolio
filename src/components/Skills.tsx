@@ -8,6 +8,9 @@ export default function Skills() {
     {Skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
     {Skill("react", SkillPercentage.React)}
     {Skill("html & css", SkillPercentage.HtmlAndCss)}
+    {Skill("c#", SkillPercentage.CSharp)}
+    {Skill("sql", SkillPercentage.Sql)}
+    {Skill(".net", SkillPercentage.DotNet)}
   </div>;
 }
 
