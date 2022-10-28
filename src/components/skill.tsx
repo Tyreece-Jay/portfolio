@@ -4,8 +4,9 @@ import { SkillPercentage } from './skillpercentage';
 
 export default function Skill(name: string, percentage: SkillPercentage) {
   return <div className="Skill">
-    <h4>{name.toUpperCase()}</h4>
-    <div className='Progress' aria-label={name}>
+    <h4 className="Skill-name">{name.toUpperCase()}</h4>
+    <h4 className="Skill-percentage">{percentage}%</h4>
+    <div className="Skill-progressbar" aria-label={name}>
       <ProgressBar completed={percentage} />
     </div>
   </div>;

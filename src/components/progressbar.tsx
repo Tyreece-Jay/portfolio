@@ -19,7 +19,6 @@ export const ProgressBar = (props: { completed: any; }) => {
   return (
     <div style={containerStyles}>
       <div style={fillerStyles}>
-        <span></span>
       </div>
     </div>
   );

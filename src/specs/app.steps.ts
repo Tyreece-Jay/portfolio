@@ -1,3 +1,4 @@
+import { SkillPercentage } from '../components/skillpercentage';
 import { page } from './app.page';
 
 beforeEach(() => {
@@ -44,27 +45,27 @@ export async function skills_title() {
 };
 
 export async function javascript_and_typescript() {
-  expectSkill("javascript & typescript")
+  expectSkill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
 };
 
 export async function react() {
-  expectSkill("react")
+  expectSkill("react", SkillPercentage.React)
 };
 
 export async function html_and_css() {
-  expectSkill("html & css")
+  expectSkill("html & css", SkillPercentage.HtmlAndCss)
 };
 
 export async function c_sharp() {
-  expectSkill("c#")
+  expectSkill("c#", SkillPercentage.CSharp)
 };
 
 export async function sql() {
-  expectSkill("sql")
+  expectSkill("sql", SkillPercentage.Sql)
 };
 
 export async function dot_net() {
-  expectSkill(".net")
+  expectSkill(".net", SkillPercentage.DotNet)
 };
 
 export async function experience_and_education_headline() {
@@ -132,7 +133,8 @@ export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
 }
 
-async function expectSkill(skill: string) {
+async function expectSkill(skill: string, percentage: SkillPercentage) {
   expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
+  expect(page.skillpercentage(percentage)).toBeInTheDocument();
   expect(page.skillprogress(skill)).toBeInTheDocument();
 }

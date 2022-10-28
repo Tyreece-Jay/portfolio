@@ -123,13 +123,32 @@ html{
 
 .Skill {
   padding-bottom: 50px;
-  width: 40vw;
+  width: 40%;
+  display: grid;
+  grid-template-areas:
+  "skillname skillpercentage"
+  "progressbar progressbar";
 }
 
-.Skill h4 {
+.Skill-name {
+  grid-area: skillname;
   font-size: calc(20px);
   color: #F0F0F0;
   margin: 0;
+  justify-self: start;
+}
+
+.Skill-percentage {
+  grid-area: skillpercentage;
+  font-size: calc(20px);
+  color: #F0F0F0;
+  margin: 0;
+  justify-self: end;
+}
+
+.Skill-progressbar {
+  grid-area: progressbar;
+  justify-self: stretch;
 }
 
 .Experience-and-education {
