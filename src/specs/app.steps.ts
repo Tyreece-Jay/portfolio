@@ -117,7 +117,6 @@ export async function contact_title() {
 };
 
 export async function contact_button() {
-  expect(page.contactbutton).toHaveAttribute('href', '')
   expect(page.contactemail).toBeInTheDocument();
 };
 
@@ -131,6 +130,14 @@ export async function clickable_linkedin_icon() {
 
 export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
+}
+
+export async function clickable_email_icon() {
+  expect(page.emaillink).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
+}
+
+export async function clickable_email_button() {
+  expect(page.contactbutton).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
 }
 
 async function expectSkill(skill: string, percentage: SkillPercentage) {

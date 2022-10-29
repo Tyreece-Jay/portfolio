@@ -16,6 +16,7 @@ export const page = {
     get github() { return elements.alt("GitHub") },
     get githublink() { return elements.label("github link") },
     get email() { return elements.alt("Email") },
+    get emaillink() { return elements.label("email link") },
     get downarrow() { return elements.alt("down arrow") },
     get aboutheadline() { return elements.text("I’m An Open Book") },
     get abouttitle() { return elements.text("ABOUT") },

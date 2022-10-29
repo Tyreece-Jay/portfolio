@@ -1,4 +1,4 @@
-import { header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, contact_headline } from './app.steps'
+import { header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, contact_headline, clickable_email_icon, clickable_email_button } from './app.steps'
 
 describe('renders header and footer', () => {
   test('headline', header_headline);
@@ -47,4 +47,6 @@ describe('renders contact', () => {
 describe('interactions', () => {
   test('clickable LinkedIn icon', clickable_linkedin_icon);
   test('clickable GitHub icon', clickable_github_icon);
+  test('clickable Email icon', clickable_email_icon);
+  test('clickable Email button', clickable_email_button);
 })
