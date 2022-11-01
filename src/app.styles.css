@@ -170,18 +170,25 @@ html{
   justify-self: stretch;
 }
 
-.SkillCircle {
+.SkillCircles {
   grid-area: skillcircles;
-  display: flex;
-  flex-direction: column;
-  height: 30vh;
-  align-items: center;
+  display: grid;
+  grid-template-areas:
+  "skillname skillpercentage"
+  "progressbar progressbar";
+  align-items: flex-start;
+  justify-items: flex-end;
+}
+
+.SkillCircle {
+  width: 30vh;
 }
 
 .SkillCircle h4 {
   font-size: calc(20px);
   color: #F6F7EB;
   margin: 0;
+  text-align: center;
 }
 
 .CircularProgressbar .CircularProgressbar-path {

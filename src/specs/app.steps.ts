@@ -72,6 +72,10 @@ export async function agile() {
   expectSkill("agile - scrum & kanban", SkillPercentage.Agile)
 };
 
+export async function programming() {
+  expectSkill("pair/mob programming", SkillPercentage.Programming)
+};
+
 export async function experience_and_education_headline() {
   expect(page.experienceandeducationheadline).toBeInTheDocument();
 };
