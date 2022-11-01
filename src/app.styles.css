@@ -50,8 +50,8 @@ html{
   background-color: #F6F7EB;
   color: #3A3E41;
   padding: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
   display: grid;
   grid-template-areas:
   "aboutheadline icons"
@@ -107,11 +107,17 @@ html{
 
 .Skills {
   padding: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
+  display: grid;
+  grid-template-areas:
+  "skillheadline skillheadline"
+  "skilltitle skilltitle"
+  "skillbars skillcircles";
 }
 
 .Skills-headline {
+  grid-area: skillheadline;
   font-size: calc(20px);
   color: #3A3E41;
   margin: 0;
@@ -121,6 +127,7 @@ html{
 }
 
 .Skills-title {
+  grid-area: skilltitle;
   font-size: calc(48px);
   color: #F6F7EB;
   text-align: center;
@@ -129,9 +136,12 @@ html{
   font-weight: bold;
 }
 
+.SkillBars {
+  grid-area: skillbars;
+}
+
 .Skill {
   padding-bottom: 50px;
-  width: 40%;
   display: grid;
   grid-template-areas:
   "skillname skillpercentage"
@@ -141,7 +151,7 @@ html{
 .Skill-name {
   grid-area: skillname;
   font-size: calc(20px);
-  color: #F0F0F0;
+  color: #F6F7EB;
   margin: 0;
   justify-self: start;
   font-weight: 600;
@@ -150,7 +160,7 @@ html{
 .Skill-percentage {
   grid-area: skillpercentage;
   font-size: calc(20px);
-  color: #F0F0F0;
+  color: #F6F7EB;
   margin: 0;
   justify-self: end;
 }
@@ -160,12 +170,44 @@ html{
   justify-self: stretch;
 }
 
+.SkillCircle {
+  grid-area: skillcircles;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  align-items: center;
+}
+
+.SkillCircle h4 {
+  font-size: calc(20px);
+  color: #F6F7EB;
+  margin: 0;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #F6F7EB;
+  stroke-linecap: butt;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #3A3E41;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  font-size: calc(12px);
+  font-weight: 600;
+  fill: #F6F7EB;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
 .Experience-and-education {
   background-color: #F6F7EB;
   color: #3A3E41;
   padding: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
   display: grid;
   grid-template-areas:
   "experienceandeducationheadline image"

@@ -4,5 +4,6 @@ export const enum SkillPercentage {
   HtmlAndCss = "74",
   CSharp = "58",
   Sql = "54",
-  DotNet = "50"
+  DotNet = "50",
+  Agile = "89"
 }

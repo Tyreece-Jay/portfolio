@@ -7,7 +7,7 @@ export default function Skill(name: string, percentage: SkillPercentage) {
     <h4 className="Skill-name">{name.toUpperCase()}</h4>
     <h4 className="Skill-percentage">{percentage}%</h4>
     <div className="Skill-progressbar" aria-label={name}>
-      <ProgressBar completed={percentage} />
+      <ProgressBar progress={percentage} />
     </div>
   </div>;
 }

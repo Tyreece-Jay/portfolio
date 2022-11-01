@@ -68,6 +68,10 @@ export async function dot_net() {
   expectSkill(".net", SkillPercentage.DotNet)
 };
 
+export async function agile() {
+  expectSkill("agile - scrum & kanban", SkillPercentage.Agile)
+};
+
 export async function experience_and_education_headline() {
   expect(page.experienceandeducationheadline).toBeInTheDocument();
 };

@@ -1,7 +1,7 @@
 import React from "react";
 
-export const ProgressBar = (props: { completed: any; }) => {
-  const { completed } = props;
+export const ProgressBar = (props: { progress: any; }) => {
+  const { progress } = props;
 
   const containerStyles = {
     width: '100%',
@@ -11,7 +11,7 @@ export const ProgressBar = (props: { completed: any; }) => {
 
   const fillerStyles = {
     height: 20,
-    width: `${completed}%`,
+    width: `${progress}%`,
     backgroundColor: "#F6F7EB",
     transition: 'width 1s ease-in-out'
   };
