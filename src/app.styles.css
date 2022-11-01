@@ -138,6 +138,8 @@ html{
 
 .SkillBars {
   grid-area: skillbars;
+  display: flex;
+  flex-direction: column;
 }
 
 .Skill {
@@ -174,14 +176,14 @@ html{
   grid-area: skillcircles;
   display: grid;
   grid-template-areas:
-  "skillname skillpercentage"
-  "progressbar progressbar";
+  "skillcircle skillcircle"
+  "skillcircle skillcircle";
   align-items: flex-start;
   justify-items: flex-end;
 }
 
 .SkillCircle {
-  width: 30vh;
+  width: 10vw;
 }
 
 .SkillCircle h4 {
