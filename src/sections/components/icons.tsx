@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Github = require('../images/github.png');
-const LinkedIn = require('../images/linkedin.png');
-const Email = require('../images/email.png');
+const Github = require('../../images/github.png');
+const LinkedIn = require('../../images/linkedin.png');
+const Email = require('../../images/email.png');
 
 export default function Icons() {
   return <div className='Icons'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icons from './icons';
+import Icons from './components/icons';
 
 export default function About() {
   return <div className="About">

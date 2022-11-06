@@ -1,7 +1,7 @@
 import React from 'react';
-import { SkillPercentage } from './skillpercentage';
-import SkillBar from './skillbar';
-import SkillCircle from './skillcircle';
+import { SkillPercentage } from './components/skillpercentage';
+import SkillBar from './components/skillbar';
+import SkillCircle from './components/skillcircle';
 
 export default function Skills() {
   return <div className="Skills">
