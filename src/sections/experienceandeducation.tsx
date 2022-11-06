@@ -4,7 +4,7 @@ const Me = require('../images/me.png');
 
 export default function ExperienceAndEducation() {
   return <div className="experience-and-education">
-    <h3 className="experience-and-education-headline">Never Stop Learning</h3>
+    <h4 className="experience-and-education-headline">Never Stop Learning</h4>
     <h3 className="experience-and-education-title">EXPERIENCE & EDUCATION</h3>
     <div className="experience-text">
       <span className="place">First Databank </span>

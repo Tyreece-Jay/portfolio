@@ -1,7 +1,6 @@
 * {
   background-color: #D65C3B;
   margin: 0;
-  font-family: 'EB Garamond', serif;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,7 +12,6 @@ html {
 
 .header {
   min-height: 100vh;
-  color: #F6F7EB;
   display: grid;
   grid-template-areas:
     "headerheadline"
@@ -24,24 +22,27 @@ html {
   text-align: center;
 }
 
-.header h1 {
+h1 {
   grid-area: headerheadline;
   padding-top: 30vh;
-  margin: 0;
-  font-size: calc(48px);
-  background: none;
   align-self: end;
+  font-size: calc(64px);
+  background: none;
   color: #3A3E41;
-  font-family: serif;
   font-weight: 600;
 }
 
-.header-title, h2 {
+.header-title {
   grid-area: headertitle;
-  margin: 0;
-  font-size: calc(64px);
+  background: none;
+}
+
+h2 {
+  grid-area: headertitle;
+  font-size: calc(48px);
   background: none;
   font-weight: bold;
+  color: #F6F7EB;
 }
 
 .down-arrow {
@@ -67,21 +68,24 @@ html {
 
 .about-headline {
   grid-area: aboutheadline;
+}
+
+h4 {
   font-size: calc(20px);
   color: #D65C3B;
   background-color: #F6F7EB;
-  margin: 0;
-  font-family: serif;
   font-weight: 600;
 }
 
 .about-title {
   grid-area: abouttitle;
+}
+
+h3 {
   font-size: calc(48px);
   color: #3A3E41;
   background-color: #F6F7EB;
-  margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   font-weight: bold;
 }
 
@@ -123,22 +127,16 @@ html {
 
 .skills-headline {
   grid-area: skillheadline;
-  font-size: calc(20px);
   color: #3A3E41;
-  margin: 0;
+  background-color:#D65C3B;
   text-align: center;
-  font-family: serif;
-  font-weight: 600;
 }
 
 .skills-title {
   grid-area: skilltitle;
-  font-size: calc(48px);
   color: #F6F7EB;
+  background-color: #D65C3B;
   text-align: center;
-  margin: 0;
-  margin-bottom: 50px;
-  font-weight: bold;
 }
 
 .skill-bars {
@@ -157,42 +155,20 @@ html {
 
 .skill-name {
   grid-area: skillname;
-  font-size: calc(20px);
   color: #F6F7EB;
-  margin: 0;
-  justify-self: start;
-  font-weight: 600;
+  background-color: #D65C3B;
 }
 
 .skill-percentage {
   grid-area: skillpercentage;
-  font-size: calc(20px);
   color: #F6F7EB;
-  margin: 0;
   justify-self: end;
+  background-color: #D65C3B;
 }
 
 .skill-progressbar {
   grid-area: progressbar;
   justify-self: stretch;
-}
-
-.CircularProgressbar .CircularProgressbar-path {
-  stroke: #F6F7EB;
-  stroke-linecap: butt;
-  transition: stroke-dashoffset 0.5s ease 0s;
-}
-
-.CircularProgressbar .CircularProgressbar-trail {
-  stroke: #3A3E41;
-}
-
-.CircularProgressbar .CircularProgressbar-text {
-  font-size: calc(12px);
-  font-weight: 600;
-  fill: #F6F7EB;
-  dominant-baseline: middle;
-  text-anchor: middle;
 }
 
 .experience-and-education {
@@ -212,22 +188,10 @@ html {
 
 .experience-and-education-headline {
   grid-area: experienceandeducationheadline;
-  font-size: calc(20px);
-  color: #D65C3B;
-  background-color: #F6F7EB;
-  margin: 0;
-  font-family: serif;
-  font-weight: 600;
 }
 
 .experience-and-education-title {
   grid-area: experienceandeducationtitle;
-  font-size: calc(48px);
-  color: #3A3E41;
-  background-color: #F6F7EB;
-  margin: 0;
-  margin-bottom: 32px;
-  font-weight: bold;
 }
 
 .experience-text, span, p {
@@ -235,14 +199,12 @@ html {
   background-color: #F6F7EB;
   width: 80%;
   font-size: calc(20px);
-  margin: 0;
 }
 
 .education-text {
   grid-area: educationtext;
   background-color: #F6F7EB;
   width: 80%;
-  margin: 0;
   margin-top: 32px;
 }
 
@@ -256,7 +218,6 @@ html {
 
 ul, li {
   background-color: #F6F7EB;
-  margin: 0;
   font-size: calc(16px);
 }
 
@@ -273,19 +234,13 @@ ul, li {
 }
 
 .contact-headline {
-  font-size: calc(20px);
   color: #3A3E41;
-  margin: 0;
-  font-family: serif;
-  font-weight: 600;
+  background-color: #D65C3B;
 }
 
 .contact-title {
-  font-size: calc(48px);
   color: #F6F7EB;
-  margin: 0;
-  margin-bottom: 50px;
-  font-weight: bold;
+  background-color: #D65C3B;
 }
 
 .contact-button {
