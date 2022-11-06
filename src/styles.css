@@ -93,7 +93,6 @@ p, ul, li {
   grid-area: abouttitle;
 }
 
-
 .about-text {
   grid-area: abouttext;
   width: 80%;
