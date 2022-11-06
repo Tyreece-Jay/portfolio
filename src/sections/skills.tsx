@@ -1,5 +1,5 @@
 import React from 'react';
-import { SkillPercentage } from './components/skillpercentage';
+import { SkillPercentage } from '../enums/skillpercentage';
 import SkillBar from './components/skillbar';
 
 export default function Skills() {

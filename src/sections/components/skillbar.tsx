@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProgressBar } from './progressbar';
-import { SkillPercentage } from './skillpercentage';
+import { SkillPercentage } from '../../enums/skillpercentage';
 
 export default function SkillBar(name: string, percentage: SkillPercentage) {
   return <div className="skill">

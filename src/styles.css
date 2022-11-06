@@ -16,15 +16,14 @@ h1 {
   align-self: end;
   font-size: calc(64px);
   background: none;
-  color: #3A3E41;
-  font-weight: 600;
+  color: #F6F7EB;
 }
 
 h2 {
   font-size: calc(48px);
   background: none;
   font-weight: bold;
-  color: #F6F7EB;
+  color: #3A3E41;
 }
 
 h3 {
