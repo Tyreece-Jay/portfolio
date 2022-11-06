@@ -36,7 +36,7 @@ h3 {
 
 h4 {
   font-size: calc(20px);
-  color: #D65C3B;
+  color: #3A3E41;
   background-color: #F6F7EB;
   font-weight: 600;
 }
@@ -54,8 +54,6 @@ p, ul, li {
     "headerheadline"
     "headertitle"
     "arrow";
-  background-image: url(./images/hey.png);
-  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -126,7 +124,7 @@ p, ul, li {
 
 .skills-headline {
   grid-area: skillheadline;
-  color: #3A3E41;
+  color: #F6F7EB;
   background-color:#D65C3B;
   text-align: center;
 }
@@ -240,7 +238,7 @@ p, ul, li {
 }
 
 .contact-headline {
-  color: #3A3E41;
+  color: #F6F7EB;
   background-color: #D65C3B;
 }
 
