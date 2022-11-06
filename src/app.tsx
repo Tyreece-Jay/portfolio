@@ -1,4 +1,3 @@
-import './app.styles.css';
 import React from 'react';
 import Header from './sections/header';
 import About from './sections/about';

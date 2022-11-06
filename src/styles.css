@@ -1,8 +1,13 @@
 * {
   background-color: #D65C3B;
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html{
+html {
   border: solid #F6F7EB 40px;
 }
 
