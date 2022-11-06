@@ -6,74 +6,74 @@ beforeEach(() => {
 });
 
 export async function header_headline() {
-  expect(page.headerheadline).toBeInTheDocument();
+  expect(page.headline("TYREECE SIMPSON")).toBeInTheDocument();
 };
 
 export async function header_title() {
-  expect(page.headertitle1).toBeInTheDocument();
-  expect(page.headertitle2).toBeInTheDocument();
-};
-
-export async function icons() {
-  expect(page.github).toBeInTheDocument();
-  expect(page.linkedin).toBeInTheDocument();
-  expect(page.email).toBeInTheDocument();
+  expect(page.title("Full-Stack Software Engineer")).toBeInTheDocument();
+  expect(page.title("Front-End Specialist")).toBeInTheDocument();
 };
 
 export async function down_arrow() {
-  expect(page.downarrow).toBeInTheDocument();
+  expect(page.icon("down arrow")).toBeInTheDocument();
 };
 
 export async function about_headline() {
-  expect(page.aboutheadline).toBeInTheDocument();
+  expect(page.headline("I’m An Open Book")).toBeInTheDocument();
 };
 
 export async function about_title() {
-  expect(page.abouttitle).toBeInTheDocument();
+  expect(page.title("ABOUT")).toBeInTheDocument();
 };
 
 export async function about_text() {
   expect(page.text("about text")).toBeInTheDocument();
 };
 
+export async function icons() {
+  expect(page.icon("GitHub")).toBeInTheDocument();
+  expect(page.icon("LinkedIn")).toBeInTheDocument();
+  expect(page.icon("Email")).toBeInTheDocument();
+};
+
 export async function skills_headline() {
-  expect(page.skillsheadline).toBeInTheDocument();
+  expect(page.headline("Knowledge Is Everything")).toBeInTheDocument();
 };
 
 export async function skills_title() {
-  expect(page.skillstitle).toBeInTheDocument();
+  expect(page.title("PROFESSIONAL SKILLS")).toBeInTheDocument();
 };
 
 export async function javascript_and_typescript() {
-  expectSkill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
+  expectskill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
 };
 
 export async function react() {
-  expectSkill("react", SkillPercentage.React)
+  expectskill("react", SkillPercentage.React)
 };
 
 export async function html_and_css() {
-  expectSkill("html & css", SkillPercentage.HtmlAndCss)
+  expectskill("html & css", SkillPercentage.HtmlAndCss)
 };
 
 export async function c_sharp() {
-  expectSkill("c#", SkillPercentage.CSharp)
+  expectskill("c#", SkillPercentage.CSharp)
 };
 
 export async function sql() {
-  expectSkill("sql", SkillPercentage.Sql)
+  expectskill("sql", SkillPercentage.Sql)
 };
 
 export async function dot_net() {
-  expectSkill(".net", SkillPercentage.DotNet)
+  expectskill(".net", SkillPercentage.DotNet)
 };
 
 export async function experience_and_education_headline() {
-  expect(page.experienceandeducationheadline).toBeInTheDocument();
+  expect(page.headline("Never Stop Learning")).toBeInTheDocument();
 };
 
 export async function experience_and_education_title() {
-  expect(page.experienceandeducationtitle).toBeInTheDocument();
+  expect(page.title("EXPERIENCE & EDUCATION")).toBeInTheDocument();
 };
 
 export async function experience_place() {
@@ -113,11 +113,11 @@ export async function experience_and_education_image() {
 };
 
 export async function contact_headline() {
-  expect(page.experienceandeducationheadline).toBeInTheDocument();
+  expect(page.headline("Don’t Be A Stranger")).toBeInTheDocument();
 };
 
 export async function contact_title() {
-  expect(page.contacttitle).toBeInTheDocument();
+  expect(page.title("CONTACT ME")).toBeInTheDocument();
 };
 
 export async function contact_button() {
@@ -144,7 +144,7 @@ export async function clickable_email_button() {
   expect(page.contactbutton).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
 }
 
-async function expectSkill(skill: string, percentage: SkillPercentage) {
+async function expectskill(skill: string, percentage: SkillPercentage) {
   expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
   expect(page.skillpercentage(percentage)).toBeInTheDocument();
   expect(page.skillprogress(skill)).toBeInTheDocument();
