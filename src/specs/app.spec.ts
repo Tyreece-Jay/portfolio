@@ -1,4 +1,4 @@
-import { header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, contact_headline, clickable_email_icon, clickable_email_button, agile, programming, tdd, ddd, experience_and_education_image } from './app.steps'
+import { header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title, experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, contact_headline, clickable_email_icon, clickable_email_button, experience_and_education_image } from './app.steps'
 
 describe('renders header', () => {
   test('headline', header_headline);
@@ -22,10 +22,6 @@ describe('renders skills', () => {
   test('c#', c_sharp);
   test('sql', sql);
   test('.net', dot_net);
-  test('agile - scrum & kanban', agile);
-  test('pair/mob programming', programming);
-  test('test-driven development', tdd);
-  test('behaviour-driven development', ddd);
 })
 
 describe('renders experience and education', () => {
