@@ -37,7 +37,7 @@ export async function icons() {
 };
 
 export async function skills_headline() {
-  expect(page.headline("Knowledge Is Everything")).toBeInTheDocument();
+  expect(page.headline("Constantly Curious")).toBeInTheDocument();
 };
 
 export async function skills_title() {
@@ -69,7 +69,7 @@ export async function dot_net() {
 };
 
 export async function experience_and_education_headline() {
-  expect(page.headline("Never Stop Learning")).toBeInTheDocument();
+  expect(page.headline("My Growth")).toBeInTheDocument();
 };
 
 export async function experience_and_education_title() {
@@ -117,7 +117,7 @@ export async function contact_headline() {
 };
 
 export async function contact_title() {
-  expect(page.title("CONTACT ME")).toBeInTheDocument();
+  expect(page.title("GET IN TOUCH")).toBeInTheDocument();
 };
 
 export async function contact_button() {

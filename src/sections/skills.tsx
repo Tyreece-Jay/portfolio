@@ -4,7 +4,7 @@ import SkillBar from './components/skillbar';
 
 export default function Skills() {
   return <div className="skills">
-    <h4 className="skills-headline">Knowledge Is Everything</h4>
+    <h4 className="skills-headline">Constantly Curious</h4>
     <h3 className="skills-title">PROFESSIONAL SKILLS</h3>
     <div className='skill-bars'>
       {SkillBar("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
