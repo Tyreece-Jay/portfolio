@@ -15,6 +15,6 @@ export default function Header() {
         Front-End Specialist
       </h2>
     </div>
-    <img src={Downarrow} alt="down arrow" className="down-arrow" />
+    <img src={Downarrow} alt="Down Arrow" className="down-arrow" />
   </header>;
 }

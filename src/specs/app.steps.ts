@@ -15,7 +15,7 @@ export async function header_title() {
 };
 
 export async function down_arrow() {
-  expect(page.icon("down arrow")).toBeInTheDocument();
+  expect(page.icon("Down Arrow")).toBeInTheDocument();
 };
 
 export async function about_headline() {
@@ -23,11 +23,11 @@ export async function about_headline() {
 };
 
 export async function about_title() {
-  expect(page.title("ABOUT")).toBeInTheDocument();
+  expect(page.title("ABOUT ME")).toBeInTheDocument();
 };
 
 export async function about_text() {
-  expect(page.text("about text")).toBeInTheDocument();
+  expect(page.text("about-text")).toBeInTheDocument();
 };
 
 export async function icons() {
@@ -89,7 +89,7 @@ export async function experience_dates() {
 };
 
 export async function experience_text() {
-  expect(page.text("experience text")).toBeInTheDocument();
+  expect(page.text("experience-text")).toBeInTheDocument();
 };
 
 export async function education_place() {
@@ -105,7 +105,7 @@ export async function education_dates() {
 };
 
 export async function education_text() {
-  expect(page.text("education text")).toBeInTheDocument();
+  expect(page.text("education-text")).toBeInTheDocument();
 };
 
 export async function experience_and_education_image() {
@@ -121,6 +121,7 @@ export async function contact_title() {
 };
 
 export async function contact_button() {
+  expect(page.icon("Contact")).toBeInTheDocument();
   expect(page.contactemail).toBeInTheDocument();
 };
 

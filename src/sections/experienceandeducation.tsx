@@ -10,7 +10,7 @@ export default function ExperienceAndEducation() {
       <h4 className="place">First Databank </h4>
       <h4 className="occupation">- Software Developer</h4>
       <p>SEPTEMBER 2018 - PRESENT</p>
-      <ul aria-label='experience text'>
+      <ul aria-label='experience-text'>
         <li>
           Improved the AnalyseRx solution as part of a team during its early stages, which helped produce a ~300% increase in its customer base.
         </li>
@@ -26,12 +26,12 @@ export default function ExperienceAndEducation() {
       <h4 className="place">The University of Exeter </h4>
       <h4 className="occupation">- BSC, Digital & Technology Solutions with proficiency in Software Engineering</h4>
       <p>SEPTEMBER 2018 - MAY 2022</p>
-      <ul aria-label='education text'>
+      <ul aria-label='education-text'>
         <li>
           Throughout my experience at the University of Exeter I developed tremendously in many different areas from industry knowledge to interpersonal skills whilst also specialising in software engineering.
         </li>
       </ul>
     </div>
-    <img src={Me} alt="Me" className="me" />
+    <img src={Me} alt="Tyreece Simpson" className="me" />
   </div>;
 }
