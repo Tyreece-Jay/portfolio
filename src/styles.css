@@ -11,7 +11,7 @@ html {
   border: solid #F6F7EB 40px;
 }
 
-.Header {
+.header {
   min-height: 100vh;
   color: #F6F7EB;
   display: grid;
@@ -24,7 +24,7 @@ html {
   text-align: center;
 }
 
-.Header h1 {
+.header h1 {
   grid-area: headerheadline;
   padding-top: 30vh;
   margin: 0;
@@ -36,7 +36,7 @@ html {
   font-weight: 600;
 }
 
-.Header-title, h2 {
+.header-title, h2 {
   grid-area: headertitle;
   margin: 0;
   font-size: calc(64px);
@@ -44,14 +44,14 @@ html {
   font-weight: bold;
 }
 
-.Down-arrow {
+.down-arrow {
   grid-area: arrow;
   padding-top: 20vh;
   justify-self: center;
   background: none;
 }
 
-.About {
+.about {
   background-color: #F6F7EB;
   color: #3A3E41;
   padding: 100px;
@@ -65,7 +65,7 @@ html {
   align-items: center;
 }
 
-.About-headline {
+.about-headline {
   grid-area: aboutheadline;
   font-size: calc(20px);
   color: #D65C3B;
@@ -75,7 +75,7 @@ html {
   font-weight: 600;
 }
 
-.About-title {
+.about-title {
   grid-area: abouttitle;
   font-size: calc(48px);
   color: #3A3E41;
@@ -85,14 +85,14 @@ html {
   font-weight: bold;
 }
 
-.About-text {
+.about-text {
   grid-area: abouttext;
   background-color: #F6F7EB;
   width: 60%;
   font-size: calc(16px);
 }
 
-.Icons {
+.icons {
   grid-area: icons;
   display: flex;
   flex-direction: column;
@@ -101,16 +101,16 @@ html {
   align-content: space-between;
 }
 
-.Icons, a, img {
+.icons, a, img {
   background: none;
 }
 
-.Middle-icon {
+.middle-icon {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.Skills {
+.skills {
   padding: 100px;
   padding-left: 160px;
   padding-right: 160px;
@@ -121,7 +121,7 @@ html {
   "skillbars skillcircles";
 }
 
-.Skills-headline {
+.skills-headline {
   grid-area: skillheadline;
   font-size: calc(20px);
   color: #3A3E41;
@@ -131,7 +131,7 @@ html {
   font-weight: 600;
 }
 
-.Skills-title {
+.skills-title {
   grid-area: skilltitle;
   font-size: calc(48px);
   color: #F6F7EB;
@@ -141,13 +141,13 @@ html {
   font-weight: bold;
 }
 
-.SkillBars {
+.skill-bars {
   grid-area: skillbars;
   display: flex;
   flex-direction: column;
 }
 
-.Skill {
+.skill {
   padding-bottom: 50px;
   display: grid;
   grid-template-areas:
@@ -155,7 +155,7 @@ html {
   "progressbar progressbar";
 }
 
-.Skill-name {
+.skill-name {
   grid-area: skillname;
   font-size: calc(20px);
   color: #F6F7EB;
@@ -164,7 +164,7 @@ html {
   font-weight: 600;
 }
 
-.Skill-percentage {
+.skill-percentage {
   grid-area: skillpercentage;
   font-size: calc(20px);
   color: #F6F7EB;
@@ -172,30 +172,9 @@ html {
   justify-self: end;
 }
 
-.Skill-progressbar {
+.skill-progressbar {
   grid-area: progressbar;
   justify-self: stretch;
-}
-
-.SkillCircles {
-  grid-area: skillcircles;
-  display: grid;
-  grid-template-areas:
-  "skillcircle skillcircle"
-  "skillcircle skillcircle";
-  align-items: flex-start;
-  justify-items: flex-end;
-}
-
-.SkillCircle {
-  width: 10vw;
-}
-
-.SkillCircle h4 {
-  font-size: calc(20px);
-  color: #F6F7EB;
-  margin: 0;
-  text-align: center;
 }
 
 .CircularProgressbar .CircularProgressbar-path {
@@ -216,7 +195,7 @@ html {
   text-anchor: middle;
 }
 
-.Experience-and-education {
+.experience-and-education {
   background-color: #F6F7EB;
   color: #3A3E41;
   padding: 100px;
@@ -231,7 +210,7 @@ html {
   align-items: center;
 }
 
-.Experience-and-education-headline {
+.experience-and-education-headline {
   grid-area: experienceandeducationheadline;
   font-size: calc(20px);
   color: #D65C3B;
@@ -241,7 +220,7 @@ html {
   font-weight: 600;
 }
 
-.Experience-and-education-title {
+.experience-and-education-title {
   grid-area: experienceandeducationtitle;
   font-size: calc(48px);
   color: #3A3E41;
@@ -251,7 +230,7 @@ html {
   font-weight: bold;
 }
 
-.Experience-text, span, p {
+.experience-text, span, p {
   grid-area: experiencetext;
   background-color: #F6F7EB;
   width: 80%;
@@ -259,7 +238,7 @@ html {
   margin: 0;
 }
 
-.Education-text {
+.education-text {
   grid-area: educationtext;
   background-color: #F6F7EB;
   width: 80%;
@@ -267,11 +246,11 @@ html {
   margin-top: 32px;
 }
 
-.Place {
+.place {
   font-weight: 600;
 }
 
-.Occupation {
+.occupation {
   font-style: italic;
 }
 
@@ -281,11 +260,11 @@ ul, li {
   font-size: calc(16px);
 }
 
-.Me {
+.me {
   grid-area: image;
 }
 
-.Contact {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +272,7 @@ ul, li {
   padding: 100px;
 }
 
-.Contact-headline {
+.contact-headline {
   font-size: calc(20px);
   color: #3A3E41;
   margin: 0;
@@ -301,7 +280,7 @@ ul, li {
   font-weight: 600;
 }
 
-.Contact-title {
+.contact-title {
   font-size: calc(48px);
   color: #F6F7EB;
   margin: 0;
@@ -309,7 +288,7 @@ ul, li {
   font-weight: bold;
 }
 
-.Contact-button {
+.contact-button {
   color: #D65C3B;
   background-color: #F6F7EB;
   text-align: center;
@@ -320,7 +299,7 @@ ul, li {
   align-items: center;
 }
 
-.Contact-button p {
+.contact-button p {
   font-size: calc(20px);
   text-align: center;
   margin-left: 20px;

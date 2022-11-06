@@ -3,10 +3,10 @@ import { ProgressBar } from './progressbar';
 import { SkillPercentage } from './skillpercentage';
 
 export default function SkillBar(name: string, percentage: SkillPercentage) {
-  return <div className="Skill">
-    <h4 className="Skill-name">{name.toUpperCase()}</h4>
-    <h4 className="Skill-percentage">{percentage}%</h4>
-    <div className="Skill-progressbar" aria-label={name}>
+  return <div className="skill">
+    <h4 className="skill-name">{name.toUpperCase()}</h4>
+    <h4 className="skill-percentage">{percentage}%</h4>
+    <div className="skill-progressbar" aria-label={name}>
       <ProgressBar progress={percentage} />
     </div>
   </div>;

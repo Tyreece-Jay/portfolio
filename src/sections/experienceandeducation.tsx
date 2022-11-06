@@ -3,12 +3,12 @@ import React from 'react';
 const Me = require('../images/me.png');
 
 export default function ExperienceAndEducation() {
-  return <div className="Experience-and-education">
-    <h3 className="Experience-and-education-headline">Never Stop Learning</h3>
-    <h3 className="Experience-and-education-title">EXPERIENCE & EDUCATION</h3>
-    <div className="Experience-text">
-      <span className="Place">First Databank </span>
-      <span className="Occupation">- Software Developer</span>
+  return <div className="experience-and-education">
+    <h3 className="experience-and-education-headline">Never Stop Learning</h3>
+    <h3 className="experience-and-education-title">EXPERIENCE & EDUCATION</h3>
+    <div className="experience-text">
+      <span className="place">First Databank </span>
+      <span className="occupation">- Software Developer</span>
       <p>SEPTEMBER 2018 - PRESENT</p>
       <ul aria-label='experience text'>
         <li>
@@ -22,9 +22,9 @@ export default function ExperienceAndEducation() {
         </li>
       </ul>
     </div>
-    <div className="Education-text">
-      <span className="Place">The University of Exeter </span>
-      <span className="Occupation">- BSC, Digital & Technology Solutions with proficiency in Software Engineering</span>
+    <div className="education-text">
+      <span className="place">The University of Exeter </span>
+      <span className="occupation">- BSC, Digital & Technology Solutions with proficiency in Software Engineering</span>
       <p>SEPTEMBER 2018 - MAY 2022</p>
       <ul aria-label='education text'>
         <li>
@@ -32,6 +32,6 @@ export default function ExperienceAndEducation() {
         </li>
       </ul>
     </div>
-    <img src={Me} alt="Me" className="Me" />
+    <img src={Me} alt="Me" className="me" />
   </div>;
 }
