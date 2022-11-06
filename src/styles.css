@@ -171,6 +171,15 @@ p, ul, li {
   justify-self: stretch;
 }
 
+.progress-container {
+  background-color: #3A3E41;
+}
+
+.progress-fill {
+  background-color: #F6F7EB;
+  transition: width 1s ease-in-out;
+}
+
 .experience-and-education {
   background-color: #F6F7EB;
   color: #3A3E41;
