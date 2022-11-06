@@ -6,6 +6,6 @@ export default function Contact() {
   return <div className="contact">
     <h4 className="contact-headline">Don’t Be A Stranger</h4>
     <h3 className="contact-title">CONTACT ME</h3>
-    <a href="mailto:tyreece.jay@gmail.com" aria-label='contact' className="contact-button"><img src={Email} alt="email button"/><p>tyreece.jay@gmail.com</p></a>
+    <a href="mailto:tyreece.jay@gmail.com" aria-label='contact' className="contact-button"><img src={Email} alt="email button"/><h4>tyreece.jay@gmail.com</h4></a>
   </div>;
 }

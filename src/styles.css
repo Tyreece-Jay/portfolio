@@ -10,6 +10,44 @@ html {
   border: solid #F6F7EB 40px;
 }
 
+h1 {
+  grid-area: headerheadline;
+  padding-top: 30vh;
+  align-self: end;
+  font-size: calc(64px);
+  background: none;
+  color: #3A3E41;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: calc(48px);
+  background: none;
+  font-weight: bold;
+  color: #F6F7EB;
+}
+
+h3 {
+  font-size: calc(48px);
+  color: #3A3E41;
+  background-color: #F6F7EB;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: calc(20px);
+  color: #D65C3B;
+  background-color: #F6F7EB;
+  font-weight: 600;
+}
+
+p, ul, li {
+  color: #3A3E41;
+  background-color: #F6F7EB;
+  font-size: calc(16px);
+}
+
 .header {
   min-height: 100vh;
   display: grid;
@@ -22,27 +60,9 @@ html {
   text-align: center;
 }
 
-h1 {
-  grid-area: headerheadline;
-  padding-top: 30vh;
-  align-self: end;
-  font-size: calc(64px);
-  background: none;
-  color: #3A3E41;
-  font-weight: 600;
-}
-
 .header-title {
   grid-area: headertitle;
   background: none;
-}
-
-h2 {
-  grid-area: headertitle;
-  font-size: calc(48px);
-  background: none;
-  font-weight: bold;
-  color: #F6F7EB;
 }
 
 .down-arrow {
@@ -54,7 +74,6 @@ h2 {
 
 .about {
   background-color: #F6F7EB;
-  color: #3A3E41;
   padding: 100px;
   padding-left: 160px;
   padding-right: 160px;
@@ -70,30 +89,14 @@ h2 {
   grid-area: aboutheadline;
 }
 
-h4 {
-  font-size: calc(20px);
-  color: #D65C3B;
-  background-color: #F6F7EB;
-  font-weight: 600;
-}
-
 .about-title {
   grid-area: abouttitle;
 }
 
-h3 {
-  font-size: calc(48px);
-  color: #3A3E41;
-  background-color: #F6F7EB;
-  margin-bottom: 50px;
-  font-weight: bold;
-}
 
 .about-text {
   grid-area: abouttext;
-  background-color: #F6F7EB;
-  width: 60%;
-  font-size: calc(16px);
+  width: 80%;
 }
 
 .icons {
@@ -101,8 +104,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  align-content: space-between;
 }
 
 .icons, a, img {
@@ -194,31 +195,29 @@ h3 {
   grid-area: experienceandeducationtitle;
 }
 
-.experience-text, span, p {
+.experience-text {
   grid-area: experiencetext;
   background-color: #F6F7EB;
   width: 80%;
-  font-size: calc(20px);
 }
 
 .education-text {
   grid-area: educationtext;
   background-color: #F6F7EB;
-  width: 80%;
   margin-top: 32px;
+  width: 80%;
 }
 
 .place {
-  font-weight: 600;
+  color: #3A3E41;
+  display: inline;
 }
 
 .occupation {
   font-style: italic;
-}
-
-ul, li {
-  background-color: #F6F7EB;
-  font-size: calc(16px);
+  display: inline;
+  color: #3A3E41;
+  font-weight: normal;
 }
 
 .me {
@@ -254,11 +253,8 @@ ul, li {
   align-items: center;
 }
 
-.contact-button p {
-  font-size: calc(20px);
-  text-align: center;
+.contact-button h4 {
   margin-left: 20px;
-  font-weight: 600;
 }
 
 footer {

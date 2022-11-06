@@ -7,8 +7,8 @@ export default function ExperienceAndEducation() {
     <h4 className="experience-and-education-headline">Never Stop Learning</h4>
     <h3 className="experience-and-education-title">EXPERIENCE & EDUCATION</h3>
     <div className="experience-text">
-      <span className="place">First Databank </span>
-      <span className="occupation">- Software Developer</span>
+      <h4 className="place">First Databank </h4>
+      <h4 className="occupation">- Software Developer</h4>
       <p>SEPTEMBER 2018 - PRESENT</p>
       <ul aria-label='experience text'>
         <li>
@@ -23,8 +23,8 @@ export default function ExperienceAndEducation() {
       </ul>
     </div>
     <div className="education-text">
-      <span className="place">The University of Exeter </span>
-      <span className="occupation">- BSC, Digital & Technology Solutions with proficiency in Software Engineering</span>
+      <h4 className="place">The University of Exeter </h4>
+      <h4 className="occupation">- BSC, Digital & Technology Solutions with proficiency in Software Engineering</h4>
       <p>SEPTEMBER 2018 - MAY 2022</p>
       <ul aria-label='education text'>
         <li>
