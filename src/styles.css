@@ -6,17 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  border: solid #F6F7EB 40px;
-}
-
 h1 {
-  grid-area: headerheadline;
-  padding-top: 30vh;
-  align-self: end;
   font-size: calc(64px);
   background: none;
-  color: #F6F7EB;
+  color: #F5F5F5;
 }
 
 h2 {
@@ -29,7 +22,7 @@ h2 {
 h3 {
   font-size: calc(48px);
   color: #3A3E41;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   margin-bottom: 50px;
   font-weight: bold;
 }
@@ -37,48 +30,47 @@ h3 {
 h4 {
   font-size: calc(20px);
   color: #3A3E41;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   font-weight: 600;
 }
 
 p, ul, li {
   color: #3A3E41;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   font-size: calc(16px);
 }
 
 .header {
   min-height: 100vh;
-  display: grid;
-  grid-template-areas:
-    "headerheadline"
-    "headertitle"
-    "arrow";
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header-title {
-  grid-area: headertitle;
-  background: none;
+.icons {
+  grid-area: icons;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.down-arrow {
-  grid-area: arrow;
-  padding-top: 20vh;
-  justify-self: center;
-  background: none;
+.middle-icon {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .about {
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   padding: 100px;
   padding-left: 160px;
   padding-right: 160px;
   display: grid;
   grid-template-areas:
-  "aboutheadline icons"
-  "abouttitle icons"
-  "abouttext icons";
+  "aboutheadline image"
+  "abouttitle image"
+  "abouttext image";
   align-items: center;
 }
 
@@ -95,20 +87,8 @@ p, ul, li {
   width: 80%;
 }
 
-.icons {
-  grid-area: icons;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icons, a, img {
-  background: none;
-}
-
-.middle-icon {
-  margin-top: 25px;
-  margin-bottom: 25px;
+.me {
+  grid-area: image;
 }
 
 .skills {
@@ -124,14 +104,14 @@ p, ul, li {
 
 .skills-headline {
   grid-area: skillheadline;
-  color: #F6F7EB;
+  color: #F5F5F5;
   background-color:#D65C3B;
   text-align: center;
 }
 
 .skills-title {
   grid-area: skilltitle;
-  color: #F6F7EB;
+  color: #F5F5F5;
   background-color: #D65C3B;
   text-align: center;
 }
@@ -152,13 +132,13 @@ p, ul, li {
 
 .skill-name {
   grid-area: skillname;
-  color: #F6F7EB;
+  color: #F5F5F5;
   background-color: #D65C3B;
 }
 
 .skill-percentage {
   grid-area: skillpercentage;
-  color: #F6F7EB;
+  color: #F5F5F5;
   justify-self: end;
   background-color: #D65C3B;
 }
@@ -173,12 +153,12 @@ p, ul, li {
 }
 
 .progress-fill {
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   transition: width 1s ease-in-out;
 }
 
 .experience-and-education {
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   color: #3A3E41;
   padding: 100px;
   padding-left: 160px;
@@ -202,13 +182,13 @@ p, ul, li {
 
 .experience-text {
   grid-area: experiencetext;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   width: 80%;
 }
 
 .education-text {
   grid-area: educationtext;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   margin-top: 32px;
   width: 80%;
 }
@@ -225,10 +205,6 @@ p, ul, li {
   font-weight: normal;
 }
 
-.me {
-  grid-area: image;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -238,18 +214,17 @@ p, ul, li {
 }
 
 .contact-headline {
-  color: #F6F7EB;
+  color: #F5F5F5;
   background-color: #D65C3B;
 }
 
 .contact-title {
-  color: #F6F7EB;
+  color: #F5F5F5;
   background-color: #D65C3B;
 }
 
 .contact-button {
-  color: #D65C3B;
-  background-color: #F6F7EB;
+  background-color: #3A3E41;
   text-align: center;
   padding: 20px;
   text-decoration: none;
@@ -260,12 +235,18 @@ p, ul, li {
 
 .contact-button h4 {
   margin-left: 20px;
+  background-color: #3A3E41;
+  color: #F5F5F5;
+}
+
+.contact-button img {
+  background-color: #3A3E41;
 }
 
 footer {
   padding-top: 40px;
   color: #D65C3B;
-  background-color: #F6F7EB;
+  background-color: #F5F5F5;
   text-align: center;
   font-size: calc(16px);
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 
-const Me = require('../images/me.png');
-
 export default function ExperienceAndEducation() {
   return <div className="experience-and-education">
     <h4 className="experience-and-education-headline">My Growth</h4>
@@ -32,6 +30,5 @@ export default function ExperienceAndEducation() {
         </li>
       </ul>
     </div>
-    <img src={Me} alt="Tyreece Simpson" className="me" />
   </div>;
 }

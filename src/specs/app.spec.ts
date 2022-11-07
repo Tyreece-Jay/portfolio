@@ -3,9 +3,10 @@ import { header_headline, header_title, icons, down_arrow, about_title, about_te
   clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, 
   education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, 
   education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, 
-  contact_headline, clickable_email_icon, clickable_email_button, experience_and_education_image } from './app.steps'
+  contact_headline, clickable_email_icon, clickable_email_button, image } from './app.steps'
 
 describe('renders header', () => {
+  test('icons', icons);
   test('headline', header_headline);
   test('title', header_title);
   test('down arrow', down_arrow);
@@ -15,7 +16,7 @@ describe('renders about', () => {
   test('headline', about_headline);
   test('title', about_title);
   test('text', about_text);
-  test('icons', icons);
+  test('image', image);
 })
 
 describe('renders skills', () => {
@@ -40,7 +41,6 @@ describe('renders experience and education', () => {
   test('education occupation', education_occupation);
   test('education dates', education_dates);
   test('education text', education_text);
-  test('image', experience_and_education_image);
 })
 
 describe('renders contact', () => {

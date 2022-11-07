@@ -1,13 +1,15 @@
 import React from 'react';
+import Icons from './components/icons';
 
 const Downarrow = require('../images/icons8-expand-arrow-96.png');
 
 export default function Header() {
   return <header className="header">
-    <h1>
-      TYREECE SIMPSON
-    </h1>
-    <div className='header-title'>
+    <Icons />
+    <div>
+      <h1>
+        TYREECE SIMPSON
+      </h1>
       <h2>
         Full-Stack Software Engineer
       </h2>
