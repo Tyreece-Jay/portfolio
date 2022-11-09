@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import App from '../app';
-import { SkillPercentage } from '../enums/skillpercentage';
+import { SkillPercentage } from '../types/skillpercentage';
 
 export const page = {
     async render() {

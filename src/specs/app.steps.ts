@@ -1,4 +1,4 @@
-import { SkillPercentage } from '../enums/skillpercentage';
+import { SkillPercentage } from '../types/skillpercentage';
 import { page } from './app.page';
 
 beforeEach(() => {

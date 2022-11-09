@@ -1,15 +1,14 @@
 * {
-  background-color: #D65C3B;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
   font-size: calc(64px);
   background: none;
   color: #F5F5F5;
+  position: static;
 }
 
 h2 {
@@ -41,12 +40,29 @@ p, ul, li {
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#gradient-canvas {
+  height: 100%;
+  width: 100%;
+  --gradient-color-1: #9164d8;
+  --gradient-color-2: #5d4fda; 
+  --gradient-color-3: #7dcb75;  
+  --gradient-color-4: #669cce;
+  position: absolute;
+}
+
+.header-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  height: 100vh;
 }
 
 .icons {
@@ -100,19 +116,20 @@ p, ul, li {
   "skillheadline skillheadline"
   "skilltitle skilltitle"
   "skillbars skillcircles";
+  background-color: #3A3E41 ;
 }
 
 .skills-headline {
   grid-area: skillheadline;
   color: #F5F5F5;
-  background-color:#D65C3B;
+  background-color:#3A3E41;
   text-align: center;
 }
 
 .skills-title {
   grid-area: skilltitle;
   color: #F5F5F5;
-  background-color: #D65C3B;
+  background-color: #3A3E41;
   text-align: center;
 }
 
@@ -133,14 +150,14 @@ p, ul, li {
 .skill-name {
   grid-area: skillname;
   color: #F5F5F5;
-  background-color: #D65C3B;
+  background-color: #3A3E41;
 }
 
 .skill-percentage {
   grid-area: skillpercentage;
   color: #F5F5F5;
   justify-self: end;
-  background-color: #D65C3B;
+  background-color: #3A3E41;
 }
 
 .skill-progressbar {
@@ -149,7 +166,7 @@ p, ul, li {
 }
 
 .progress-container {
-  background-color: #3A3E41;
+  background-color: #5d4fda;
 }
 
 .progress-fill {
@@ -183,14 +200,12 @@ p, ul, li {
 .experience-text {
   grid-area: experiencetext;
   background-color: #F5F5F5;
-  width: 80%;
 }
 
 .education-text {
   grid-area: educationtext;
   background-color: #F5F5F5;
   margin-top: 32px;
-  width: 80%;
 }
 
 .place {
@@ -211,20 +226,21 @@ p, ul, li {
   align-items: center;
   text-align: center;
   padding: 100px;
+  background-color: #3A3E41;
 }
 
 .contact-headline {
   color: #F5F5F5;
-  background-color: #D65C3B;
+  background-color: #3A3E41;
 }
 
 .contact-title {
   color: #F5F5F5;
-  background-color: #D65C3B;
+  background-color: #3A3E41;
 }
 
 .contact-button {
-  background-color: #3A3E41;
+  background-color: #5d4fda;
   text-align: center;
   padding: 20px;
   text-decoration: none;
@@ -235,17 +251,17 @@ p, ul, li {
 
 .contact-button h4 {
   margin-left: 20px;
-  background-color: #3A3E41;
+  background-color: #5d4fda;
   color: #F5F5F5;
 }
 
 .contact-button img {
-  background-color: #3A3E41;
+  background-color: #5d4fda;
 }
 
 footer {
   padding-top: 40px;
-  color: #D65C3B;
+  color: #3A3E41;
   background-color: #F5F5F5;
   text-align: center;
   font-size: calc(16px);

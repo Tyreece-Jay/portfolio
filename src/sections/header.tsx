@@ -1,10 +1,17 @@
 import React from 'react';
 import Icons from './components/icons';
+import '../styles.css'
+
+const {Gradient} = require('./components/gradient.js');
+const gradient = new Gradient()
+gradient.initGradient('#gradient-canvas')
 
 const Downarrow = require('../images/icons8-expand-arrow-96.png');
 
 export default function Header() {
-  return <header className="header">
+  return <div className='header'>
+  <canvas id="gradient-canvas" data-transition-in />
+  <div className="header-content">
     <Icons />
     <div>
       <h1>
@@ -18,5 +25,6 @@ export default function Header() {
       </h2>
     </div>
     <img src={Downarrow} alt="Down Arrow" className="down-arrow" />
-  </header>;
+  </div>
+  </div>;
 }
