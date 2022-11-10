@@ -98,8 +98,9 @@ p, ul, li {
   grid-template-areas:
   "skillheadline skillheadline"
   "skilltitle skilltitle"
-  "skillbars skillcircles";
-  background-color: #3A3E41 ;
+  "frontendskills backendskills";
+  background-color: #3A3E41;
+  grid-template-columns: 1fr 1fr;
 }
 
 .skills-headline {
@@ -116,14 +117,25 @@ p, ul, li {
   text-align: center;
 }
 
-.skill-bars {
-  grid-area: skillbars;
+.frontend-skills {
+  grid-area: frontendskills;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-right: 50px;
+}
+
+.backend-skills {
+  grid-area: backendskills;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-left: 50px;
 }
 
 .skill {
-  padding-bottom: 50px;
   display: grid;
   grid-template-areas:
   "skillname skillpercentage"
@@ -149,11 +161,11 @@ p, ul, li {
 }
 
 .progress-container {
-  background-color: #5d4fda;
+  background-color: #F5F5F5;
 }
 
 .progress-fill {
-  background-color: #F5F5F5;
+  background-color: #5d4fda;
   transition: width 1s ease-in-out;
 }
 
