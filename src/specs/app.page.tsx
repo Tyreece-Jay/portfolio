@@ -14,7 +14,7 @@ export const page = {
     get image() { return elements.alt("Tyreece Simpson") },
     get contactbutton() { return elements.label("contact") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },
-    get footertext() { return elements.text("Copyright © 2022 Tyreece Simpson - All Rights Reserved.") },
+    get footertext() { return elements.text(`© Tyreece Simpson, ${new Date().getFullYear()}`) },
 
     headline(text: string) {return elements.text(text)},
     title(text: string) {return elements.text(text)},
