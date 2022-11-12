@@ -1,5 +1,6 @@
 import React from 'react';
 import Icons from './components/icons';
+import '../styles.css'
 
 const {Gradient} = require('./components/gradient.js');
 const gradient = new Gradient()
