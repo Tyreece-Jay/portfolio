@@ -9,8 +9,8 @@ export const ProgressBar = (props: { progress: any; }) => {
   };
 
   return (
-    <div className="progress-container">
-      <div className="progress-fill" style={dimensions}>
+    <div className="progress-bar-container">
+      <div className="progress-bar" style={dimensions}>
       </div>
     </div>
   );

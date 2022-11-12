@@ -29,7 +29,6 @@ h3 {
 h4 {
   font-size: calc(20px);
   color: #3A3E41;
-  background-color: #F5F5F5;
   font-weight: 600;
 }
 
@@ -160,13 +159,26 @@ p, ul, li {
   justify-self: stretch;
 }
 
-.progress-container {
+.progress-bar-container {
   background-color: #F5F5F5;
+  position: relative;
 }
 
-.progress-fill {
+.progress-bar {
   background-color: #5d4fda;
   transition: width 1s ease-in-out;
+  -webkit-mask:linear-gradient(#fff 0 0);
+          mask:linear-gradient(#fff 0 0);
+}
+
+.progress-bar::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #9164d8, #5d4fda, #669cce, #7dcb75);
 }
 
 .experience-and-education {
@@ -235,7 +247,7 @@ p, ul, li {
 }
 
 .contact-button {
-  background-color: #5d4fda;
+  background-image: linear-gradient(to right, #9164d8, #5d4fda, #669cce, #7dcb75);
   text-align: center;
   padding: 20px;
   text-decoration: none;
@@ -246,7 +258,6 @@ p, ul, li {
 
 .contact-button h4 {
   margin-left: 20px;
-  background-color: #5d4fda;
   color: #F5F5F5;
 }
 
