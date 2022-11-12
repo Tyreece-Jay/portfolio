@@ -76,6 +76,20 @@ p, ul, li {
   margin-right: 25px;
 }
 
+.cursor {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  border-right: 0.15em solid #3A3E41;
+  animation: blink 0.5s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .about {
   background-color: #F5F5F5;
   padding: 100px;

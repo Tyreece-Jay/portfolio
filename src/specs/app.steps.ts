@@ -5,13 +5,12 @@ beforeEach(() => {
   page.render();
 });
 
-export async function header_headline() {
-  expect(page.headline("TYREECE SIMPSON")).toBeInTheDocument();
+export async function header_title() {
+  expect(page.title("TYREECE SIMPSON")).toBeInTheDocument();
 };
 
-export async function header_title() {
-  expect(page.title("Full-Stack Software Engineer")).toBeInTheDocument();
-  expect(page.title("Front-End Specialist")).toBeInTheDocument();
+export async function header_headline() {
+  expect(page.profession).toBeInTheDocument();
 };
 
 export async function down_arrow() {

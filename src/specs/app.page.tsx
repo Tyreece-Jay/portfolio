@@ -8,6 +8,7 @@ export const page = {
         render(<App />)
     },
 
+    get profession() { return elements.label("profession") },
     get linkedinlink() { return elements.label("linkedin-link") },
     get githublink() { return elements.label("github-link") },
     get emaillink() { return elements.label("email-link") },
