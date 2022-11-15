@@ -3,7 +3,7 @@ import { header_headline, header_title, icons, down_arrow, about_title, about_te
   clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, 
   education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, 
   education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, 
-  contact_headline, clickable_email_icon, clickable_email_button, image } from './app.steps'
+  contact_headline, clickable_email_icon, clickable_email_button, image, clickable_down_arrow } from './app.steps'
 
 describe('renders header', () => {
   test('icons', icons);
@@ -54,6 +54,7 @@ describe('renders footer', () => {
 })
 
 describe('interactions', () => {
+  test('clickable down arroww', clickable_down_arrow);
   test('clickable LinkedIn icon', clickable_linkedin_icon);
   test('clickable GitHub icon', clickable_github_icon);
   test('clickable Email icon', clickable_email_icon);

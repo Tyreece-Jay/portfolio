@@ -128,6 +128,10 @@ export async function footer_text() {
   expect(page.footertext).toBeInTheDocument();
 };
 
+export async function clickable_down_arrow() {
+  expect(page.icon("Down Arrow")).toHaveAttribute('href', () => scroll())
+}
+
 export async function clickable_linkedin_icon() {
   expect(page.linkedinlink).toHaveAttribute('href', 'https://linkedin.com/in/tyreece-simpson-287912160')
 }

@@ -2,6 +2,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -42,6 +43,10 @@ p, ul, li {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.down-arrow {
+  cursor: pointer;
 }
 
 #gradient-canvas {
