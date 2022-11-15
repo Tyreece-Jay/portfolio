@@ -44,6 +44,7 @@ const write = async () => {
     }
   }
 };
+
 write();
 
 function scroll() {
@@ -59,9 +60,7 @@ export default function Header() {
         <h1>
           TYREECE SIMPSON
         </h1>
-        <h2 aria-label='profession'>
-          <span id='typewriter'></span><span className='cursor'></span>
-        </h2>
+        <h2><span aria-label='profession' id='typewriter'></span><span className='cursor'></span></h2>
       </div>
       <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => scroll()} />
     </div>

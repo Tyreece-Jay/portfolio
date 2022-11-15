@@ -77,8 +77,8 @@ p, ul, li {
 }
 
 .middle-icon {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .cursor {
@@ -102,10 +102,25 @@ p, ul, li {
   padding-right: 200px;
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .about-text {
   width: 80%;
+}
+
+@media (min-width: 800px) {
+  .about {   
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-bottom: 50px;
+  }
 }
 
 .skills {
@@ -200,6 +215,28 @@ p, ul, li {
   background-image: linear-gradient(to right, #9164d8, #5d4fda, #669cce, #7dcb75);
 }
 
+@media (min-width: 800px) {
+  .skills {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-areas:
+    "skillheadline skillheadline"
+    "skilltitle skilltitle"
+    "frontendskills frontendskills"
+    "backendskills backendskills";
+  }
+
+  .frontend-skills {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  
+  .backend-skills {
+    margin: 0;
+  }
+}
+
 .experience-and-education {
   background-color: #F5F5F5;
   color: #3A3E41;
@@ -246,6 +283,14 @@ p, ul, li {
   font-weight: normal;
 }
 
+@media (min-width: 800px) {
+  .experience-and-education {   
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -284,10 +329,24 @@ p, ul, li {
   background-color: #5d4fda;
 }
 
+@media (min-width: 800px) {
+  .contact {   
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 footer {
   padding: 50px;
   color: #3A3E41;
   background-color: #F5F5F5;
   text-align: center;
   font-size: calc(16px);
+}
+
+@media (min-width: 800px) {
+  footer {   
+    padding: 25px;
+  }
 }
