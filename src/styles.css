@@ -109,7 +109,7 @@ p, ul, li {
   width: 80%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .about {   
     flex-direction: column;
     padding: 50px;
@@ -215,7 +215,7 @@ p, ul, li {
   background-image: linear-gradient(to right, #9164d8, #5d4fda, #669cce, #7dcb75);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .skills {
     padding: 50px;
     padding-left: 100px;
@@ -283,7 +283,7 @@ p, ul, li {
   font-weight: normal;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .experience-and-education {   
     padding: 50px;
     padding-left: 100px;
@@ -329,7 +329,7 @@ p, ul, li {
   background-color: #5d4fda;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .contact {   
     padding: 50px;
     padding-left: 100px;
@@ -345,7 +345,7 @@ footer {
   font-size: calc(16px);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   footer {   
     padding: 25px;
   }
