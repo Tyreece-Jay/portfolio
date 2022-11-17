@@ -1,0 +1,45 @@
+.about {
+  background-color: var(--white);
+  padding: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-text {
+  width: 80%;
+}
+
+.me {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}

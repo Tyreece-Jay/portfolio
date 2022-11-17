@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/experienceandeducation.styles.css'
 
 export default function ExperienceAndEducation() {
   return <div className="experience-and-education">

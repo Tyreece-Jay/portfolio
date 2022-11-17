@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/contact.styles.css'
 
 const Email = require('../images/email.png');
 

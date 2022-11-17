@@ -1,6 +1,7 @@
 import React from 'react';
 import { SkillPercentage } from '../types/skillpercentage';
 import SkillBar from './components/skillbar';
+import './styles/skills.styles.css'
 
 export default function Skills() {
   return <div className="skills">

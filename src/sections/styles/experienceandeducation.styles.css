@@ -1,0 +1,61 @@
+.experience-and-education {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: grid;
+  grid-template-areas:
+    "experienceandeducationheadline image"
+    "experienceandeducationtitle image"
+    "experiencetext image"
+    "educationtext image";
+  align-items: center;
+}
+
+.experience-and-education-headline {
+  grid-area: experienceandeducationheadline;
+}
+
+.experience-and-education-title {
+  grid-area: experienceandeducationtitle;
+}
+
+.experience-text {
+  grid-area: experiencetext;
+  background-color: var(--white);
+}
+
+.education-text {
+  grid-area: educationtext;
+  background-color: var(--white);
+  margin-top: 32px;
+}
+
+.place {
+  color: var(--black);
+  display: inline;
+}
+
+.occupation {
+  font-style: italic;
+  display: inline;
+  color: var(--black);
+  font-weight: normal;
+}
+
+@media (max-width: 1200px) {
+  .experience-and-education {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-and-education {
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

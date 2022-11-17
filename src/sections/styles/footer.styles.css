@@ -1,0 +1,20 @@
+footer {
+  padding: 50px;
+  color: var(--black);
+  background-color: var(--white);
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
