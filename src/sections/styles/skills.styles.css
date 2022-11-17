@@ -123,9 +123,11 @@
   .frontend-skills {
     margin: 0;
     margin-bottom: 50px;
+    height: 150px;
   }
 
   .backend-skills {
     margin: 0;
+    height: 150px;
   }
 }

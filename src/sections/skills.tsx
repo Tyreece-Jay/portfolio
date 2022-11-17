@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkillPercentage } from '../types/skillpercentage';
-import SkillBar from './components/skillbar';
+import Skill from './components/skill';
 import './styles/skills.styles.css'
 
 export default function Skills() {
@@ -8,14 +8,14 @@ export default function Skills() {
     <h4 className="skills-headline">Constantly Curious</h4>
     <h3 className="skills-title">PROFESSIONAL SKILLS</h3>
     <div className='frontend-skills'>
-      {SkillBar("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
-      {SkillBar("react", SkillPercentage.React)}
-      {SkillBar("html & css", SkillPercentage.HtmlAndCss)}
+      {Skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
+      {Skill("react", SkillPercentage.React)}
+      {Skill("html & css", SkillPercentage.HtmlAndCss)}
     </div>
     <div className='backend-skills'>
-      {SkillBar("c#", SkillPercentage.CSharp)}
-      {SkillBar("sql", SkillPercentage.Sql)}
-      {SkillBar(".net", SkillPercentage.DotNet)}
+      {Skill("c#", SkillPercentage.CSharp)}
+      {Skill("sql", SkillPercentage.Sql)}
+      {Skill(".net", SkillPercentage.DotNet)}
     </div>
   </div>;
 }

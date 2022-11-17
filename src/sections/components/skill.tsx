@@ -2,7 +2,7 @@ import React from 'react';
 import { ProgressBar } from './progressbar';
 import { SkillPercentage } from '../../types/skillpercentage';
 
-export default function SkillBar(name: string, percentage: SkillPercentage) {
+export default function Skill(name: string, percentage: SkillPercentage) {
   return <div className="skill">
     <h4 className="skill-name">{name.toUpperCase()}</h4>
     <h4 className="skill-percentage">{percentage}%</h4>
