@@ -18,7 +18,7 @@ export default function Header() {
     } else {
       gradient.pause();
     }
-    write();
+    write()
   }, []);
 
   return <div className='header'>
