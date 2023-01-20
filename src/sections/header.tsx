@@ -8,13 +8,9 @@ const gradient = new Gradient()
 gradient.initGradient('#gradient-canvas')
 
 const Downarrow = require('../images/icons8-expand-arrow-96.png');
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 write();
 
-function scroll() {
+function scrollTop() {
   document.documentElement.scrollTop = window.innerHeight;
 }
 
@@ -29,7 +25,7 @@ export default function Header() {
         </h1>
         <h2><span aria-label='profession' id='typewriter'></span><span className='cursor'></span></h2>
       </div>
-      <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => scroll()} />
+      <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => scrollTop()} />
     </div>
   </div>;
 }
