@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Icons from './components/icons';
 import { write } from './components/typewriter';
 import './styles/header.styles.css'
-
-const { Gradient } = require('./components/gradient.js');
-const gradient = new Gradient()
-gradient.initGradient('#gradient-canvas')
-
+import { Gradient } from './components/gradient.js';
 const Downarrow = require('../images/icons8-expand-arrow-96.png');
-write();
 
 function scrollTop() {
   document.documentElement.scrollTop = window.innerHeight;
 }
 
 export default function Header() {
+  useEffect(() => {
+    const canvasElement = document.getElementById("gradient-canvas");
+    const gradient: any = new Gradient();
+    if (canvasElement) {
+      gradient.initGradient("#gradient-canvas");
+    } else {
+      gradient.pause();
+    }
+    write();
+  }, []);
+
   return <div className='header'>
     <canvas id="gradient-canvas" data-transition-in />
     <div className="header-content">
