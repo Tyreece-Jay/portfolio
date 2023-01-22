@@ -10,6 +10,9 @@ function scrollTop() {
 }
 
 export default function Header() {
+  const phrases = ["Full-Stack Software Engineer", "Front-End Specialist"];
+  const element = document.getElementById("typewriter");
+
   useEffect(() => {
     const canvasElement = document.getElementById("gradient-canvas");
     const gradient: any = new Gradient();
@@ -18,7 +21,7 @@ export default function Header() {
     } else {
       gradient.pause();
     }
-    write()
+    write(phrases, element!)
   }, []);
 
   return <div className='header'>
