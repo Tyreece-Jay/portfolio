@@ -23,7 +23,7 @@ export default function Header() {
         </h1>
         <h2><span aria-label='profession' id='typewriter'></span><span className='cursor'></span></h2>
       </div>
-      <img src={Downarrow} aria-label="Down Arrow" className="down-arrow" onClick={() => window.scrollBy(0, window.innerHeight)} />
+      <span className='button' aria-label='Down Arrow' onClick={() => window.scrollBy(0, window.innerHeight)}><i className="fa-solid fa-angle-down fa-5x" ></i></span>
     </div>
   </div>
 }

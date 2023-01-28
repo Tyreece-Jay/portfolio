@@ -4,10 +4,6 @@
   justify-content: center;
 }
 
-.down-arrow {
-  cursor: pointer;
-}
-
 #gradient-canvas {
   height: 100%;
   width: 100%;
