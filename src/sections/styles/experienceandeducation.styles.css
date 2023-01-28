@@ -1,6 +1,5 @@
 .experience-and-education {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black);
   padding: 100px;
   padding-left: 200px;
   padding-right: 200px;
@@ -23,24 +22,20 @@
 
 .experience-text {
   grid-area: experiencetext;
-  background-color: var(--white);
 }
 
 .education-text {
   grid-area: educationtext;
-  background-color: var(--white);
   margin-top: 32px;
 }
 
 .place {
-  color: var(--black);
   display: inline;
 }
 
 .occupation {
   font-style: italic;
   display: inline;
-  color: var(--black);
   font-weight: normal;
 }
 

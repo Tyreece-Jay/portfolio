@@ -28,23 +28,21 @@ h2 {
 
 h3 {
   font-size: 48px;
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--white);
   margin-bottom: 50px;
   font-weight: bold;
 }
 
 h4 {
   font-size: 20px;
-  color: var(--black);
+  color: var(--white);
   font-weight: 600;
 }
 
 p,
 ul,
 li {
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--white);
   font-size: 16px;
 }
 

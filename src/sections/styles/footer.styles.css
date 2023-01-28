@@ -1,7 +1,7 @@
 footer {
   padding: 50px;
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--black);
   text-align: center;
   font-size: 16px;
 }
