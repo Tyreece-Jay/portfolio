@@ -2,11 +2,7 @@ import { render, screen } from '@testing-library/react';
 import React from 'react';
 import App from '../app';
 import { SkillPercentage } from '../types/skillpercentage';
-jest.mock('../sections/header', () => {
-    return jest.fn(() => 
-        "TYREECE SIMPSON"
-    )
-});
+jest.mock('../sections/components/canvas');
 
 export const page = {
     async render() {
