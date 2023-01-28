@@ -1,8 +1,6 @@
 import React from 'react';
 import './styles/contact.styles.css'
 
-const Email = require('../images/email.png');
-
 export default function Contact() {
   return <div className="contact">
     <h4 className="contact-headline">Don’t Be A Stranger</h4>
