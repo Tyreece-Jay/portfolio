@@ -141,8 +141,8 @@ export async function clickable_github_icon() {
   expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
 }
 
-export async function clickable_email_icon() {
-  expect(page.emaillink).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
+export async function clickable_figma_icon() {
+  expect(page.emaillink).toHaveAttribute('href', 'https://www.figma.com/@tyreece')
 }
 
 export async function clickable_email_button() {
