@@ -1,13 +1,9 @@
 import React from 'react';
 
-const Github = require('../../images/github.png');
-const LinkedIn = require('../../images/linkedin.png');
-const Figma = require('../../images/figma.png');
-
 export default function Icons() {
   return <div className='icons'>
-    <a href="https://linkedin.com/in/tyreece-simpson-287912160" aria-label='linkedin-link'><img src={LinkedIn} alt="LinkedIn" /></a>
-    <a href="https://www.figma.com/@tyreece" aria-label='figma-link' className='middle-icon'><img src={Figma} alt="Figma" /></a>
-    <a href="https://github.com/Tyreece-Jay" aria-label='github-link' ><img src={Github} alt="GitHub" /></a>
+    <span className='button' aria-label='LinkedIn' onClick={() => window.open("https://linkedin.com/in/tyreece-simpson-287912160")}><i className="fa-brands fa-linkedin fa-3x" ></i></span>
+    <span className='button' aria-label='Figma' onClick={() => window.open("https://www.figma.com/@tyreece")}><i className="fa-brands fa-figma fa-3x" ></i></span>
+    <span className='button' aria-label='GitHub' onClick={() => window.open("https://github.com/Tyreece-Jay")}><i className="fa-brands fa-github fa-3x" ></i></span>
   </div>;
 }

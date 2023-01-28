@@ -54,7 +54,7 @@ describe('renders footer', () => {
 })
 
 describe('interactions', () => {
-  test('clickable down arroww', clickable_down_arrow);
+  test('clickable down arrow', clickable_down_arrow);
   test('clickable LinkedIn icon', clickable_linkedin_icon);
   test('clickable GitHub icon', clickable_github_icon);
   test('clickable Figma icon', clickable_figma_icon);

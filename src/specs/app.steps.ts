@@ -134,15 +134,18 @@ export async function clickable_down_arrow() {
 }
 
 export async function clickable_linkedin_icon() {
-  expect(page.linkedinlink).toHaveAttribute('href', 'https://linkedin.com/in/tyreece-simpson-287912160')
+  page.icon("LinkedIn").click()
+  expect(window.open).toHaveBeenCalledWith('https://linkedin.com/in/tyreece-simpson-287912160');
 }
 
 export async function clickable_github_icon() {
-  expect(page.githublink).toHaveAttribute('href', 'https://github.com/Tyreece-Jay')
+  page.icon("GitHub").click()
+  expect(window.open).toHaveBeenCalledWith('https://github.com/Tyreece-Jay');
 }
 
 export async function clickable_figma_icon() {
-  expect(page.figmalink).toHaveAttribute('href', 'https://www.figma.com/@tyreece')
+  page.icon("Figma").click()
+  expect(window.open).toHaveBeenCalledWith('https://www.figma.com/@tyreece');
 }
 
 export async function clickable_email_button() {

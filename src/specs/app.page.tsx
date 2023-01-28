@@ -3,6 +3,7 @@ import React from 'react';
 import App from '../app';
 import { SkillPercentage } from '../types/skillpercentage';
 jest.mock('../sections/components/canvas');
+window.open = jest.fn();
 window.scrollBy = jest.fn();
 
 export const page = {
@@ -11,17 +12,14 @@ export const page = {
     },
 
     get profession() { return elements.label("profession") },
-    get linkedinlink() { return elements.label("linkedin-link") },
-    get githublink() { return elements.label("github-link") },
-    get figmalink() { return elements.label("figma-link") },
     get image() { return elements.alt("Tyreece Simpson") },
-    get contactbutton() { return elements.label("contact") },
+    get contactbutton() { return elements.label("Contact") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },
     get footertext() { return elements.text(`© Tyreece Simpson, ${new Date().getFullYear()}`) },
 
     headline(text: string) { return elements.text(text) },
     title(text: string) { return elements.text(text) },
-    icon(text: string) { return elements.alt(text) },
+    icon(text: string) { return elements.label(text) },
     skillname(text: string) { return elements.text(text) },
     skillpercentage(percentage: SkillPercentage) { return elements.text(`${percentage.toString()}%`) },
     skillprogress(text: string) { return elements.label(text) },
