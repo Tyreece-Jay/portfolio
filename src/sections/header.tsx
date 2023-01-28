@@ -3,7 +3,6 @@ import Icons from './components/icons';
 import { write } from './components/typewriter';
 import './styles/header.styles.css'
 import Canvas from './components/canvas';
-const Downarrow = require('../images/icons8-expand-arrow-96.png');
 
 export default function Header() {
   useEffect(() => {

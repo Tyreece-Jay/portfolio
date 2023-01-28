@@ -9,6 +9,7 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  cursor: crosshair;
 }
 
 h1 {
