@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable eqeqeq */
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-sequences */
@@ -504,9 +505,6 @@ class Gradient {
         }).filter(Boolean).map(normalizeColor)
     }
 }
-
-
-
 
 /*
 *Finally initializing the Gradient class, assigning a canvas to it and calling Gradient.connect() which initializes everything,

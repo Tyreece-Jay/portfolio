@@ -10,17 +10,12 @@ function scrollTop() {
 }
 
 export default function Header() {
-  const phrases = ["Full-Stack Software Engineer", "Front-End Specialist"];
-  const element = document.getElementById("typewriter");
-
   useEffect(() => {
-    const canvasElement = document.getElementById("gradient-canvas");
+    const phrases = ["Full-Stack Software Engineer", "Front-End Specialist"];
+    const element = document.getElementById("typewriter");
     const gradient: any = new Gradient();
-    if (canvasElement) {
-      gradient.initGradient("#gradient-canvas");
-    } else {
-      gradient.pause();
-    }
+    
+    gradient.initGradient("#gradient-canvas");
     write(phrases, element!)
   }, []);
 
@@ -36,5 +31,5 @@ export default function Header() {
       </div>
       <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => scrollTop()} />
     </div>
-  </div>;
+  </div>
 }

@@ -1,6 +1,7 @@
 import { SkillPercentage } from '../types/skillpercentage';
 import { page } from './app.page';
 
+
 beforeEach(() => {
   page.render();
 });
@@ -44,27 +45,27 @@ export async function skills_title() {
 };
 
 export async function javascript_and_typescript() {
-  expectskill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
+  expect_skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
 };
 
 export async function react() {
-  expectskill("react", SkillPercentage.React)
+  expect_skill("react", SkillPercentage.React)
 };
 
 export async function html_and_css() {
-  expectskill("html & css", SkillPercentage.HtmlAndCss)
+  expect_skill("html & css", SkillPercentage.HtmlAndCss)
 };
 
 export async function c_sharp() {
-  expectskill("c#", SkillPercentage.CSharp)
+  expect_skill("c#", SkillPercentage.CSharp)
 };
 
 export async function sql() {
-  expectskill("sql", SkillPercentage.Sql)
+  expect_skill("sql", SkillPercentage.Sql)
 };
 
 export async function dot_net() {
-  expectskill(".net", SkillPercentage.DotNet)
+  expect_skill(".net", SkillPercentage.DotNet)
 };
 
 export async function experience_and_education_headline() {
@@ -148,7 +149,7 @@ export async function clickable_email_button() {
   expect(page.contactbutton).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
 }
 
-async function expectskill(skill: string, percentage: SkillPercentage) {
+async function expect_skill(skill: string, percentage: SkillPercentage) {
   expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
   expect(page.skillpercentage(percentage)).toBeInTheDocument();
   expect(page.skillprogress(skill)).toBeInTheDocument();

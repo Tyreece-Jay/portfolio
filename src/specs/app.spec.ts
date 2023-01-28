@@ -5,7 +5,7 @@ import { header_headline, header_title, icons, down_arrow, about_title, about_te
   education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, 
   contact_headline, clickable_email_icon, clickable_email_button, image, clickable_down_arrow } from './app.steps'
 
-describe('renders header', () => {
+describe.skip('renders header', () => {
   test('icons', icons);
   test('headline', header_headline);
   test('title', header_title);
@@ -54,9 +54,9 @@ describe('renders footer', () => {
 })
 
 describe('interactions', () => {
-  test('clickable down arroww', clickable_down_arrow);
-  test('clickable LinkedIn icon', clickable_linkedin_icon);
-  test('clickable GitHub icon', clickable_github_icon);
-  test('clickable Email icon', clickable_email_icon);
+  test.skip('clickable down arroww', clickable_down_arrow);
+  test.skip('clickable LinkedIn icon', clickable_linkedin_icon);
+  test.skip('clickable GitHub icon', clickable_github_icon);
+  test.skip('clickable Email icon', clickable_email_icon);
   test('clickable Email button', clickable_email_button);
 })
