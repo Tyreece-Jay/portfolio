@@ -3,14 +3,13 @@ import Icons from './components/icons';
 import { write } from './components/typewriter';
 import './styles/header.styles.css'
 import Canvas from './components/canvas';
-import { scroll } from './components/scroll';
 const Downarrow = require('../images/icons8-expand-arrow-96.png');
 
 export default function Header() {
   useEffect(() => {
     const phrases = ["Full-Stack Software Engineer", "Front-End Specialist"];
     const element = document.getElementById("typewriter");
-    
+
     write(phrases, element!)
   }, []);
 
@@ -24,7 +23,7 @@ export default function Header() {
         </h1>
         <h2><span aria-label='profession' id='typewriter'></span><span className='cursor'></span></h2>
       </div>
-      <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => scroll()} />
+      <img src={Downarrow} alt="Down Arrow" className="down-arrow" onClick={() => window.scrollBy(0, window.innerHeight)} />
     </div>
   </div>
 }

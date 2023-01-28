@@ -3,6 +3,7 @@ import React from 'react';
 import App from '../app';
 import { SkillPercentage } from '../types/skillpercentage';
 jest.mock('../sections/components/canvas');
+window.scrollBy = jest.fn();
 
 export const page = {
     async render() {
