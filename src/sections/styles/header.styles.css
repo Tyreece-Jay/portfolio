@@ -43,6 +43,7 @@
 
 .button:hover {
   color: var(--black);
+  cursor: pointer;
 }
 
 .cursor {
