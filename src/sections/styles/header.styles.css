@@ -33,6 +33,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 300px;
 }
 
 .button {
@@ -41,11 +43,6 @@
 
 .button:hover {
   color: var(--black);
-}
-
-.middle-icon {
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .cursor {
