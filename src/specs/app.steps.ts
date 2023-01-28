@@ -1,7 +1,6 @@
 import { SkillPercentage } from '../types/skillpercentage';
 import { page } from './app.page';
 
-
 beforeEach(() => {
   page.render();
 });
@@ -130,7 +129,8 @@ export async function footer_text() {
 };
 
 export async function clickable_down_arrow() {
-  expect(page.icon("Down Arrow")).toHaveAttribute('href', () => scroll())
+  page.icon("Down Arrow").click()
+  expect(window.scrollBy).toHaveBeenCalledWith(0, window.innerHeight);
 }
 
 export async function clickable_linkedin_icon() {
