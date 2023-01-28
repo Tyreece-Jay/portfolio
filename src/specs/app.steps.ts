@@ -32,7 +32,7 @@ export async function about_text() {
 export async function icons() {
   expect(page.icon("GitHub")).toBeInTheDocument();
   expect(page.icon("LinkedIn")).toBeInTheDocument();
-  expect(page.icon("Email")).toBeInTheDocument();
+  expect(page.icon("Figma")).toBeInTheDocument();
 };
 
 export async function skills_headline() {
@@ -142,7 +142,7 @@ export async function clickable_github_icon() {
 }
 
 export async function clickable_figma_icon() {
-  expect(page.emaillink).toHaveAttribute('href', 'https://www.figma.com/@tyreece')
+  expect(page.figmalink).toHaveAttribute('href', 'https://www.figma.com/@tyreece')
 }
 
 export async function clickable_email_button() {

@@ -13,7 +13,7 @@ export const page = {
     get profession() { return elements.label("profession") },
     get linkedinlink() { return elements.label("linkedin-link") },
     get githublink() { return elements.label("github-link") },
-    get emaillink() { return elements.label("email-link") },
+    get figmalink() { return elements.label("figma-link") },
     get image() { return elements.alt("Tyreece Simpson") },
     get contactbutton() { return elements.label("contact") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },
