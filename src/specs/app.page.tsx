@@ -13,7 +13,6 @@ export const page = {
 
     get profession() { return elements.label("profession") },
     get image() { return elements.alt("Tyreece Simpson") },
-    get contactbutton() { return elements.label("Contact") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },
     get footertext() { return elements.text(`© Tyreece Simpson, ${new Date().getFullYear()}`) },
 

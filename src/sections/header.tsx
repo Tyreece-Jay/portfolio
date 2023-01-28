@@ -16,13 +16,13 @@ export default function Header() {
     <Canvas />
     <div className="header-content">
       <Icons />
-      <div>
+      <div className="transparent-background">
         <h1>
           TYREECE SIMPSON
         </h1>
-        <h2><span aria-label='profession' id='typewriter'></span><span className='cursor'></span></h2>
+        <h2><span aria-label='profession' id='typewriter' className="transparent-background"></span><span className='cursor'></span></h2>
       </div>
-      <span className='button' aria-label='Down Arrow' onClick={() => window.scrollBy(0, window.innerHeight)}><i className="fa-solid fa-angle-down fa-5x" ></i></span>
+      <span className='button' aria-label='Down Arrow' onClick={() => window.scrollBy(0, window.innerHeight)}><i className="fa-solid fa-angle-down fa-5x transparent-background" ></i></span>
     </div>
   </div>
 }

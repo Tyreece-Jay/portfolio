@@ -149,7 +149,8 @@ export async function clickable_figma_icon() {
 }
 
 export async function clickable_email_button() {
-  expect(page.contactbutton).toHaveAttribute('href', 'mailto:tyreece.jay@gmail.com')
+  page.icon("Contact").click()
+  expect(window.open).toHaveBeenCalledWith('mailto:tyreece.jay@gmail.com');
 }
 
 async function expect_skill(skill: string, percentage: SkillPercentage) {

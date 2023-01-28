@@ -28,10 +28,11 @@
 .contact-button h4 {
   margin-left: 20px;
   color: var(--white);
+  background-color: transparent;
 }
 
-.contact-button img {
-  background-color: var(--gradient);
+.contact-button i {
+  color: var(--white);
 }
 
 @media (max-width: 1200px) {

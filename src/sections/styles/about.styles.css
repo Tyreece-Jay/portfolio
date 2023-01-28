@@ -1,8 +1,6 @@
 .about {
   background-color: var(--black);
-  padding: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  margin: 100px 200px 100px 200px;
   display: flex;
   align-items: center;
   flex-direction: row;

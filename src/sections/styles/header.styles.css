@@ -22,6 +22,7 @@
   align-items: center;
   position: absolute;
   height: 100vh;
+  background-color: transparent;
 }
 
 .icons {
@@ -31,14 +32,17 @@
   align-items: center;
   justify-content: space-between;
   width: 300px;
+  background-color: transparent;
 }
 
 .button {
   color: var(--white);
+  background-color: transparent;
 }
 
 .button:hover {
   color: var(--black);
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -48,6 +52,10 @@
   overflow: hidden;
   border-right: 0.15em solid var(--black);
   animation: blink 0.5s step-end infinite alternate;
+}
+
+.transparent-background {
+  background-color: transparent;
 }
 
 @keyframes blink {
