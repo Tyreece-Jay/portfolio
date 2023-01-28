@@ -1,5 +1,5 @@
 import React from 'react';
-import { SkillPercentage } from './skillpercentage';
+import { SkillPercentage } from './skill-percentage';
 import Skill from './skill';
 import './skills.styles.css'
 

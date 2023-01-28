@@ -1,6 +1,7 @@
 :root {
   --black: #3A3E41;
   --white: #F5F5F5;
+  --grey: #42494F;
   --gradient: linear-gradient(to right, #9164d8, #5d4fda, #669cce, #7dcb75)
 }
 

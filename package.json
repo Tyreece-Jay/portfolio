@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "canvas": "^2.11.0"
+    "canvas": "^2.11.0",
+    "typescript-plugin-css-modules": "^4.1.1"
   }
 }
