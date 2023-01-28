@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Gradient } from './gradient.js';
+import { Gradient } from './gradient';
 
 export default function Canvas() {
   useEffect(() => {

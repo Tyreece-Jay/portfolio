@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Icons from './components/icons';
-import { write } from './components/typewriter';
-import './styles/header.styles.css'
-import Canvas from './components/canvas';
+import Icons from './icons';
+import { write } from './typewriter';
+import './header.styles.css'
+import Canvas from './canvas';
 
 export default function Header() {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProgressBar } from './progressbar';
-import { SkillPercentage } from '../../types/skillpercentage';
+import { SkillPercentage } from './skillpercentage';
 
 export default function Skill(name: string, percentage: SkillPercentage) {
   return <div className="skill">

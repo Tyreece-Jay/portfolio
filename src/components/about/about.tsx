@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles/about.styles.css'
+import './about.styles.css'
 
-const Me = require('../images/me.png');
+const Me = require('../../images/me.png');
 
 export default function About() {
   return <div className="about">

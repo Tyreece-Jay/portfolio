@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './sections/header';
-import About from './sections/about';
-import Skills from './sections/skills';
-import ExperienceAndEducation from './sections/experienceandeducation';
-import Contact from './sections/contact';
-import Footer from './sections/footer';
+import Header from './components/header/header';
+import About from './components/about/about';
+import Skills from './components/skills/skills';
+import ExperienceAndEducation from './components/experience/experience';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 export default function App() {
   return (

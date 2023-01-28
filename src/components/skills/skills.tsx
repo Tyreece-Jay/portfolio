@@ -1,7 +1,7 @@
 import React from 'react';
-import { SkillPercentage } from '../types/skillpercentage';
-import Skill from './components/skill';
-import './styles/skills.styles.css'
+import { SkillPercentage } from './skillpercentage';
+import Skill from './skill';
+import './skills.styles.css'
 
 export default function Skills() {
   return <div className="skills">

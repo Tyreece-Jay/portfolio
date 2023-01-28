@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import App from '../app';
-import { SkillPercentage } from '../types/skillpercentage';
-jest.mock('../sections/components/canvas');
+import { SkillPercentage } from '../components/skills/skillpercentage';
+jest.mock('../components/header/canvas');
 window.open = jest.fn();
 window.scrollBy = jest.fn();
 

@@ -1,4 +1,4 @@
-import { SkillPercentage } from '../types/skillpercentage';
+import { SkillPercentage } from '../components/skills/skillpercentage';
 import { page } from './app.page';
 
 beforeEach(() => {
