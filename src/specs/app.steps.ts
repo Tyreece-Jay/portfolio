@@ -51,6 +51,11 @@ export async function skills() {
   expect(page.skill("UI/UX")).toBeInTheDocument();
   expect(page.skill(".NET")).toBeInTheDocument();
   expect(page.skill("SQL")).toBeInTheDocument();
+  expect(page.skill("DDD")).toBeInTheDocument();
+  expect(page.skill("TDD")).toBeInTheDocument();
+  expect(page.skill("BDD")).toBeInTheDocument();
+  expect(page.skill("Pair Programming")).toBeInTheDocument();
+  expect(page.skill("DevOps")).toBeInTheDocument();
 };
 
 export async function experience_and_education_headline() {

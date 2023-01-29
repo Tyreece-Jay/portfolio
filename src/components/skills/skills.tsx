@@ -18,10 +18,12 @@ export default function Skills() {
         <div className={styles.dotNet}><h4>.NET</h4></div>
         <div className={styles.sql}><h4>SQL</h4></div>
       </div>
-      <div className={styles.backend}>
-        <div className={styles.cSharp}><h4>TDD</h4></div>
-        <div className={styles.dotNet}><h4>DDD</h4></div>
-        <div className={styles.sql}><h4>BDD</h4></div>
+      <div className={styles.practices}>
+        <div className={styles.tdd}><h4>TDD</h4></div>
+        <div className={styles.ddd}><h4>DDD</h4></div>
+        <div className={styles.bdd}><h4>BDD</h4></div>
+        <div className={styles.programming}><h4>Pair Programming</h4></div>
+        <div className={styles.devops}><h4>DevOps</h4></div>
       </div>
     </div>
   </div>;
