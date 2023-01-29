@@ -22,7 +22,7 @@
 }
 
 .frontend h4 {
-  color: #7dcb75;
+  color: var(--green);
 }
 
 .frontend div {
@@ -30,7 +30,7 @@
 }
 
 .frontend div:hover {
-  background-color: #7dcb75;
+  background-color: var(--green);
 }
 
 .frontend div:hover h4 {
@@ -94,7 +94,7 @@
 }
 
 .backend h4 {
-  color: #9164d8;
+  color: var(--purple);
 }
 
 .backend div {
@@ -102,7 +102,7 @@
 }
 
 .backend div:hover {
-  background-color: #9164d8;
+  background-color: var(--purple);
 }
 
 .backend div:hover h4 {
@@ -152,7 +152,7 @@
 }
 
 .practices h4 {
-  color: #669cce;
+  color: var(--blue);
 }
 
 .practices div {
@@ -160,7 +160,7 @@
 }
 
 .practices div:hover {
-  background-color: #669cce;
+  background-color: var(--blue);
 }
 
 .practices div:hover h4 {
