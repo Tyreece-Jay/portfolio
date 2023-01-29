@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import App from '../app';
-import { SkillPercentage } from '../components/skills/skill-percentage';
 jest.mock('../components/header/canvas');
 window.open = jest.fn();
 window.scrollBy = jest.fn();
@@ -19,12 +18,10 @@ export const page = {
     headline(text: string) { return elements.text(text) },
     title(text: string) { return elements.text(text) },
     icon(text: string) { return elements.label(text) },
-    skillname(text: string) { return elements.text(text) },
-    skillpercentage(percentage: SkillPercentage) { return elements.text(`${percentage.toString()}%`) },
-    skillprogress(text: string) { return elements.label(text) },
     place(text: string) { return elements.text(text) },
     dates(text: string) { return elements.text(text) },
-    text(text: string) { return elements.label(text) }
+    text(text: string) { return elements.label(text) },
+    skill(text: string) { return elements.text(text) }
 }
 
 const elements = {

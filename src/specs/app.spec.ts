@@ -1,9 +1,11 @@
-import { header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title, 
-  experience_and_education_title, experience_place, experience_dates, experience_text, footer_text, 
-  clickable_linkedin_icon, clickable_github_icon, javascript_and_typescript, react, html_and_css, 
-  education_place, education_dates, education_text, contact_title, contact_button, experience_occupation, 
-  education_occupation, about_headline, c_sharp, sql, dot_net, skills_headline, experience_and_education_headline, 
-  contact_headline, clickable_figma_icon, clickable_email_button, image, clickable_down_arrow } from './app.steps'
+import {
+  header_headline, header_title, icons, down_arrow, about_title, about_text, skills_title,
+  experience_and_education_title, experience_place, experience_dates, experience_text, footer_text,
+  clickable_linkedin_icon, clickable_github_icon,
+  education_place, education_dates, education_text, contact_title, contact_button, experience_occupation,
+  education_occupation, about_headline, skills_headline, experience_and_education_headline,
+  contact_headline, clickable_figma_icon, clickable_email_button, image, clickable_down_arrow, skills
+} from './app.steps'
 
 describe('renders header', () => {
   test('icons', icons);
@@ -22,12 +24,7 @@ describe('renders about', () => {
 describe('renders skills', () => {
   test('headline', skills_headline);
   test('title', skills_title);
-  test('javascript & typescript', javascript_and_typescript);
-  test('react', react);
-  test('html & css', html_and_css);
-  test('c#', c_sharp);
-  test('sql', sql);
-  test('.net', dot_net);
+  test('skills', skills);
 })
 
 describe('renders experience and education', () => {

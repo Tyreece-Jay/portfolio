@@ -1,0 +1,105 @@
+.skills {
+  margin: 100px 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.frontend {
+  display: grid;
+  grid-template-areas: 
+  "react react html html html ui"
+  "react react ts ts ts ui";
+  gap: 10px;
+  width: 720px;
+  height: 360px;
+  justify-content: space-around;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.frontend div {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontend h4 {
+  background-color: transparent;
+  text-align: center;
+}
+
+.react {
+  grid-area: react;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.html {
+  grid-area: html;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  width: 172px;
+}
+
+.css {
+  grid-area: html;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  width: 172px;
+}
+
+.ts {
+  grid-area: ts;
+}
+
+.ui {
+  grid-area: ui;
+  border-radius: 0px 8px 8px 0px;
+}
+
+
+@media (max-width: 1200px) {
+  .skills {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-areas:
+      "skillheadline"
+      "skilltitle"
+      "frontendskills"
+      "backendskills";
+    grid-template-columns: 1fr;
+  }
+
+  .backend-skills {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .frontend-skills {
+    margin: 0;
+    margin-bottom: 50px;
+    height: 150px;
+  }
+
+  .backend-skills {
+    margin: 0;
+    height: 150px;
+  }
+}

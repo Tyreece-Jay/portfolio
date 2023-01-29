@@ -1,4 +1,3 @@
-import { SkillPercentage } from '../components/skills/skill-percentage';
 import { page } from './app.page';
 
 beforeEach(() => {
@@ -43,28 +42,15 @@ export async function skills_title() {
   expect(page.title("PROFESSIONAL SKILLS")).toBeInTheDocument();
 };
 
-export async function javascript_and_typescript() {
-  expect_skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)
-};
-
-export async function react() {
-  expect_skill("react", SkillPercentage.React)
-};
-
-export async function html_and_css() {
-  expect_skill("html & css", SkillPercentage.HtmlAndCss)
-};
-
-export async function c_sharp() {
-  expect_skill("c#", SkillPercentage.CSharp)
-};
-
-export async function sql() {
-  expect_skill("sql", SkillPercentage.Sql)
-};
-
-export async function dot_net() {
-  expect_skill(".net", SkillPercentage.DotNet)
+export async function skills() {
+  expect(page.skill("TypeScript/JavaScript")).toBeInTheDocument();
+  expect(page.skill("React")).toBeInTheDocument();
+  expect(page.skill("HTML")).toBeInTheDocument();
+  expect(page.skill("CSS")).toBeInTheDocument();
+  expect(page.skill("C#")).toBeInTheDocument();
+  expect(page.skill("UI/UX")).toBeInTheDocument();
+  expect(page.skill(".NET")).toBeInTheDocument();
+  expect(page.skill("SQL")).toBeInTheDocument();
 };
 
 export async function experience_and_education_headline() {
@@ -151,10 +137,4 @@ export async function clickable_figma_icon() {
 export async function clickable_email_button() {
   page.icon("Contact").click()
   expect(window.open).toHaveBeenCalledWith('mailto:tyreece.jay@gmail.com');
-}
-
-async function expect_skill(skill: string, percentage: SkillPercentage) {
-  expect(page.skillname(skill.toUpperCase())).toBeInTheDocument();
-  expect(page.skillpercentage(percentage)).toBeInTheDocument();
-  expect(page.skillprogress(skill)).toBeInTheDocument();
 }

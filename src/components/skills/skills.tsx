@@ -1,21 +1,23 @@
 import React from 'react';
-import { SkillPercentage } from './skill-percentage';
-import Skill from './skill';
-import './skills.styles.css'
+import styles from './skills.module.css'
 
 export default function Skills() {
-  return <div className="skills">
-    <h4 className="skills-headline">Constantly Curious</h4>
-    <h3 className="skills-title">PROFESSIONAL SKILLS</h3>
-    <div className='frontend-skills'>
-      {Skill("javascript & typescript", SkillPercentage.JavascriptAndTypescript)}
-      {Skill("react", SkillPercentage.React)}
-      {Skill("html & css", SkillPercentage.HtmlAndCss)}
-    </div>
-    <div className='backend-skills'>
-      {Skill("c#", SkillPercentage.CSharp)}
-      {Skill("sql", SkillPercentage.Sql)}
-      {Skill(".net", SkillPercentage.DotNet)}
+  return <div className={styles.skills}>
+    <h4>Constantly Curious</h4>
+    <h3 className={styles.title}>PROFESSIONAL SKILLS</h3>
+    <div className={styles.content}>
+      <div className={styles.frontend}>
+        <div className={styles.react}><h4>React</h4></div>
+          <div className={styles.html}><h4>HTML</h4></div>
+          <div className={styles.css}><h4>CSS</h4></div>
+        <div className={styles.ts}><h4>TypeScript/JavaScript</h4></div>
+        <div className={styles.ui}><h4>UI/UX</h4></div>
+      </div>
+      <div>
+        <div><h4>C#</h4></div>
+        <div><h4>SQL</h4></div>
+        <div><h4>.NET</h4></div>
+      </div>
     </div>
   </div>;
 }
