@@ -21,8 +21,12 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
+.frontend h4 {
+  color: #A3D883;
+}
+
 .frontend div:hover {
-  background-color: var(--white);
+  background-color: #A3D883;
 }
 
 .frontend div:hover h4 {
@@ -85,8 +89,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.backend h4 {
+  color: #8F7FD6;
+}
+
 .backend div:hover {
-  background-color: var(--white);
+  background-color: #8F7FD6;
 }
 
 .backend div:hover h4 {
@@ -135,8 +143,12 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.practices h4 {
+  color: #249DB7;
+}
+
 .practices div:hover {
-  background-color: var(--white);
+  background-color: #249DB7;
 }
 
 .practices div:hover h4 {
