@@ -22,11 +22,15 @@
 }
 
 .frontend h4 {
-  color: #A3D883;
+  color: #7dcb75;
+}
+
+.frontend div {
+  transition: 0.3s;
 }
 
 .frontend div:hover {
-  background-color: #A3D883;
+  background-color: #7dcb75;
 }
 
 .frontend div:hover h4 {
@@ -90,11 +94,15 @@
 }
 
 .backend h4 {
-  color: #8F7FD6;
+  color: #9164d8;
+}
+
+.backend div {
+  transition: 0.3s;
 }
 
 .backend div:hover {
-  background-color: #8F7FD6;
+  background-color: #9164d8;
 }
 
 .backend div:hover h4 {
@@ -144,11 +152,15 @@
 }
 
 .practices h4 {
-  color: #249DB7;
+  color: #669cce;
+}
+
+.practices div {
+  transition: 0.3s;
 }
 
 .practices div:hover {
-  background-color: #249DB7;
+  background-color: #669cce;
 }
 
 .practices div:hover h4 {
