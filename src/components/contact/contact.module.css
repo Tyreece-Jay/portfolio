@@ -6,24 +6,36 @@
 }
 
 .contactButton {
-  background-image: var(--gradient);
+  background-color: var(--white);
   text-align: center;
-  padding: 20px 100px;
+  padding: 30px 100px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
+  border-radius: 55px;
+  transition: 0.3s;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  padding: 30px 250px;
 }
 
 .contactButton h4 {
   margin-left: 20px;
+  color: var(--black);
   background-color: transparent;
 }
 
 .contactButton i {
-  color: var(--white);
+  color: var(--black);
   background-color: transparent;
+}
+
+.contactButton:hover h4, i {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
