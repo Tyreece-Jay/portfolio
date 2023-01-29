@@ -1,38 +1,29 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 100px;
+  padding: 50px 200px;
   background-color: var(--black);
 }
 
-.contact-headline {
-  color: var(--white);
-}
-
-.contact-title {
-  color: var(--white);
-}
-
-.contact-button {
+.contactButton {
   background-image: var(--gradient);
   text-align: center;
-  padding: 20px;
+  padding: 20px 100px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-self: center;
 }
 
-.contact-button h4 {
+.contactButton h4 {
   margin-left: 20px;
-  color: var(--white);
   background-color: transparent;
 }
 
-.contact-button i {
+.contactButton i {
   color: var(--white);
+  background-color: transparent;
 }
 
 @media (max-width: 1200px) {
