@@ -21,6 +21,14 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
+.frontend div:hover {
+  background-color: var(--white);
+}
+
+.frontend div:hover h4 {
+  color: var(--black);
+}
+
 .frontend div {
   background-color: var(--grey);
   display: flex;
@@ -66,6 +74,54 @@
   border-radius: 0px 8px 8px 0px;
 }
 
+.backend {
+  display: grid;
+  grid-template-areas: 
+  "csharp csharp"
+  "net sql";
+  gap: 10px;
+  width: 300px;
+  height: 360px;
+  justify-content: space-around;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.backend div:hover {
+  background-color: var(--white);
+}
+
+.backend div:hover h4 {
+  color: var(--black);
+}
+
+.backend div {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.backend h4 {
+  background-color: transparent;
+  text-align: center;
+}
+
+.cSharp {
+  grid-area: csharp;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.dotNet {
+  grid-area: net;
+  border-radius: 0px 0px 0px 8px;
+}
+
+.sql {
+  grid-area: sql;
+  border-radius: 0px 0px 8px 0px;
+}
 
 @media (max-width: 1200px) {
   .skills {
