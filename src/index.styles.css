@@ -47,6 +47,7 @@ ul,
 li {
   color: var(--white);
   font-size: 16px;
+  background-color: var(--grey);
 }
 
 @media (max-width: 600px) {

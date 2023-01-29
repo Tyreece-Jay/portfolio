@@ -5,7 +5,7 @@
   background-color: var(--black);
 }
 
-.contactButton {
+.button {
   background-color: var(--white);
   text-align: center;
   padding: 30px 100px;
@@ -18,23 +18,23 @@
   transition: 0.3s;
 }
 
-.contactButton:hover {
+.button:hover {
   cursor: pointer;
   padding: 30px 250px;
 }
 
-.contactButton h4 {
+.button h4 {
   margin-left: 20px;
   color: var(--black);
   background-color: transparent;
 }
 
-.contactButton i {
+.button i {
   color: var(--black);
   background-color: transparent;
 }
 
-.contactButton:hover h4, i {
+.button:hover h4, i {
   cursor: pointer;
 }
 

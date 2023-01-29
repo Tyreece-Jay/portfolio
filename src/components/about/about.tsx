@@ -5,7 +5,7 @@ const Me = require('../../images/me.png');
 
 export default function About() {
   return <div className={styles.about}>
-    <div className={styles.head}>
+    <div>
       <h4>I’m An Open Book</h4>
       <h3>ABOUT ME</h3>
     </div>

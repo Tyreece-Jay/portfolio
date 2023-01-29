@@ -1,12 +1,5 @@
 .about {
-  background-color: var(--black);
   margin: 100px 200px 50px;
-  align-items: center;
-}
-
-.head {
-  display: flex;
-  flex-direction: column;
 }
 
 .content {
@@ -39,7 +32,7 @@
     padding-right: 100px;
   }
 
-  .about-text {
+  .text {
     width: 100%;
     padding-bottom: 50px;
   }
@@ -52,7 +45,7 @@
     padding-right: 50px;
   }
 
-  .about-text {
+  .text {
     width: 100%;
     padding-bottom: 50px;
   }
