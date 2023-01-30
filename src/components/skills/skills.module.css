@@ -32,53 +32,40 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-.frontend h4 {
-  color: var(--green);
-}
-
-.frontend div {
-  transition: 0.3s;
-}
-
-.frontend div:hover {
+.frontend h4:hover {
   background-color: var(--green);
-}
-
-.frontend div:hover h4 {
   color: var(--black);
 }
 
-.frontend div {
+.frontend h4 {
   background-color: var(--grey);
+  color: var(--green);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.frontend h4 {
-  background-color: transparent;
   text-align: center;
+  transition: 0.3s;
 }
 
-.react {
+.frontend h4:nth-child(1) {
   grid-area: react;
   border-radius: 8px 0px 0px 8px;
 }
 
-.html {
+.frontend h4:nth-child(2) {
   grid-area: html;
 }
 
-.css {
+.frontend h4:nth-child(3) {
   grid-area: css;
 }
 
-.ts {
+.frontend h4:nth-child(4) {
   grid-area: ts;
 }
 
-.ui {
+.frontend h4:nth-child(5) {
   grid-area: ui;
   border-radius: 0px 8px 8px 0px;
 }
@@ -95,45 +82,32 @@
 }
 
 .backend h4 {
-  color: var(--purple);
-}
-
-.backend div {
-  transition: 0.3s;
-}
-
-.backend div:hover {
-  background-color: var(--purple);
-}
-
-.backend div:hover h4 {
-  color: var(--black);
-}
-
-.backend div {
   background-color: var(--grey);
+  color: var(--purple);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.backend h4 {
-  background-color: transparent;
   text-align: center;
+  transition: 0.3s;
 }
 
-.cSharp {
+.backend h4:hover {
+  background-color: var(--purple);
+  color: var(--black);
+}
+
+.backend h4:nth-child(1) {
   grid-area: csharp;
   border-radius: 8px 8px 0px 0px;
 }
 
-.dotNet {
+.backend h4:nth-child(2) {
   grid-area: net;
   border-radius: 0px 0px 0px 8px;
 }
 
-.sql {
+.backend h4:nth-child(3) {
   grid-area: sql;
   border-radius: 0px 0px 8px 0px;
 }
@@ -154,54 +128,41 @@
 }
 
 .practices h4 {
-  color: var(--blue);
-}
-
-.practices div {
-  transition: 0.3s;
-}
-
-.practices div:hover {
-  background-color: var(--blue);
-}
-
-.practices div:hover h4 {
-  color: var(--black);
-}
-
-.practices div {
   background-color: var(--grey);
+  color: var(--blue);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.practices h4 {
-  background-color: transparent;
   text-align: center;
+  transition: 0.3s;
 }
 
-.tdd {
+.practices h4:hover {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+.practices h4:nth-child(1) {
   grid-area: tdd;
   border-radius: 8px 0px 0px 0px;
 }
 
-.ddd {
+.practices h4:nth-child(2) {
   grid-area: ddd;
 }
 
-.bdd {
+.practices h4:nth-child(3) {
   grid-area: bdd;
   border-radius: 0px 0px 0px 8px;
 }
 
-.programming {
+.practices h4:nth-child(4) {
   grid-area: programming;
   border-radius: 0px 8px 0px 0px;
 }
 
-.devops {
+.practices h4:nth-child(5) {
   grid-area: devops;
   border-radius: 0px 0px 8px 0px;
 }
