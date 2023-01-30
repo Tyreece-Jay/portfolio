@@ -4,7 +4,7 @@ import {
   clickable_linkedin_icon, clickable_github_icon,
   education_place, education_dates, education_text, contact_title, contact_button, experience_occupation,
   education_occupation, about_headline, skills_headline, experience_and_education_headline,
-  contact_headline, clickable_figma_icon, clickable_email_button, image, clickable_down_arrow, skills
+  contact_headline, clickable_figma_icon, clickable_email_button, image, clickable_down_arrow, skills, skills_sub_headings
 } from './app.steps'
 
 describe('renders header', () => {
@@ -24,6 +24,7 @@ describe('renders about', () => {
 describe('renders skills', () => {
   test('headline', skills_headline);
   test('title', skills_title);
+  test('sub headings', skills_sub_headings);
   test('skills', skills);
 })
 

@@ -24,8 +24,12 @@ export async function about_title() {
   expect(page.title("ABOUT ME")).toBeInTheDocument();
 };
 
+export async function image() {
+  expect(page.image("Tyreece Simpson")).toBeInTheDocument();
+};
+
 export async function about_text() {
-  expect(page.text("about-text")).toBeInTheDocument();
+  expect(page.text_label("about-text")).toBeInTheDocument();
 };
 
 export async function icons() {
@@ -40,6 +44,15 @@ export async function skills_headline() {
 
 export async function skills_title() {
   expect(page.title("PROFESSIONAL SKILLS")).toBeInTheDocument();
+};
+
+export async function skills_sub_headings() {
+  expect(page.image("Front-End")).toBeInTheDocument();
+  expect(page.text("Front-End")).toBeInTheDocument();
+  expect(page.image("Back-End")).toBeInTheDocument();
+  expect(page.text("Back-End")).toBeInTheDocument();
+  expect(page.image("Practices")).toBeInTheDocument();
+  expect(page.text("Practices")).toBeInTheDocument();
 };
 
 export async function skills() {
@@ -79,7 +92,7 @@ export async function experience_dates() {
 };
 
 export async function experience_text() {
-  expect(page.text("experience-text")).toBeInTheDocument();
+  expect(page.text_label("experience-text")).toBeInTheDocument();
 };
 
 export async function education_place() {
@@ -95,11 +108,7 @@ export async function education_dates() {
 };
 
 export async function education_text() {
-  expect(page.text("education-text")).toBeInTheDocument();
-};
-
-export async function image() {
-  expect(page.image).toBeInTheDocument();
+  expect(page.text_label("education-text")).toBeInTheDocument();
 };
 
 export async function contact_headline() {

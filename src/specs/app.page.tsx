@@ -11,17 +11,18 @@ export const page = {
     },
 
     get profession() { return elements.label("profession") },
-    get image() { return elements.alt("Tyreece Simpson") },
     get contactemail() { return elements.text("tyreece.jay@gmail.com") },
     get footertext() { return elements.text(`© Tyreece Simpson, ${new Date().getFullYear()}`) },
 
     headline(text: string) { return elements.text(text) },
     title(text: string) { return elements.text(text) },
+    image(text: string) { return elements.alt(text) },
     icon(text: string) { return elements.label(text) },
     place(text: string) { return elements.text(text) },
     dates(text: string) { return elements.text(text) },
-    text(text: string) { return elements.label(text) },
-    skill(text: string) { return elements.text(text) }
+    text_label(text: string) { return elements.label(text) },
+    skill(text: string) { return elements.text(text) },
+    text(text: string) { return elements.text(text) }
 }
 
 const elements = {
