@@ -63,10 +63,3 @@
     border-color: transparent;
   }
 }
-
-@media (max-width: 600px) {
-  .middle-icon {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}

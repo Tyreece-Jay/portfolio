@@ -23,30 +23,3 @@
   padding-left: 20px;
   align-self: center;
 }
-
-@media (max-width: 1200px) {
-  .about {
-    flex-direction: column;
-    padding: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .text {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about {
-    padding: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .text {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-}

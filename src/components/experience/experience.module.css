@@ -8,6 +8,11 @@
   gap: 30px;
 }
 
+.content img {
+  height: 100%;
+  align-self: center;
+}
+
 .topContent {
   background-color: var(--grey);
   padding: 30px;
@@ -42,20 +47,4 @@
   font-style: italic;
   display: inline;
   font-weight: normal;
-}
-
-@media (max-width: 1200px) {
-  .experience {
-    padding: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-
-@media (max-width: 600px) {
-  .experience {
-    padding: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
