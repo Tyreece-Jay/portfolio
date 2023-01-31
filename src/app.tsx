@@ -8,13 +8,13 @@ import Footer from './components/footer/footer';
 
 export default function App() {
   return (
-    <div>
+    <>
       <Header />
       <About />
       <Skills />
       <Experience />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

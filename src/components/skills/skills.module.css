@@ -1,5 +1,5 @@
 .skills {
-  margin: 100px 200px;
+  margin: 100px 0px;
 }
 
 .content {
@@ -13,7 +13,6 @@
   row-gap: 10px;
   grid-template-columns: 6fr 2fr 3fr;
   grid-template-rows: 1fr 10fr;
-  transition: 0.3s;
 }
 
 .subHeading {
@@ -58,7 +57,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: 0.3s;
 }
 
 .frontend h4:nth-of-type(1) {
@@ -102,7 +100,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: 0.3s;
 }
 
 .backend h4:hover {
@@ -148,7 +145,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: 0.3s;
 }
 
 .practices h4:hover {

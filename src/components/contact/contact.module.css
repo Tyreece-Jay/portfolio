@@ -1,8 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  margin: 100px 200px;
-  background-color: var(--black);
+  margin: 100px 0px;
 }
 
 .button {
@@ -15,7 +14,6 @@
   align-items: center;
   align-self: center;
   border-radius: 55px;
-  transition: 0.3s;
 }
 
 .button:hover {
@@ -36,20 +34,4 @@
 
 .button:hover h4, i {
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .contact {
-    padding: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact {
-    padding: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
