@@ -12,7 +12,7 @@ export default function Experience() {
       <div className={styles.topContent}>
         <img src={FDB} alt="First Databank" />
         <div>
-          <h4 className={styles.place}>First Databank </h4>
+          <h4>First Databank </h4>
           <h4 className={styles.occupation}>- Software Developer</h4>
           <p>SEPTEMBER 2018 - PRESENT</p>
           <ul aria-label='experience-text'>
@@ -31,7 +31,7 @@ export default function Experience() {
       <div className={styles.bottomContent}>
         <img src={University} alt="University of Exeter" />
         <div>
-          <h4 className={styles.place}>The University of Exeter </h4>
+          <h4>The University of Exeter </h4>
           <h4 className={styles.occupation}>- BSC, Digital & Technology Solutions with proficiency in Software Engineering</h4>
           <p>SEPTEMBER 2018 - MAY 2022</p>
           <ul aria-label='education-text'>
