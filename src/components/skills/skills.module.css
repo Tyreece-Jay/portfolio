@@ -202,7 +202,7 @@
       "practicesheading"
       "practices";
     height: 1200px;
-    row-gap: 0.1em;
+    row-gap: 1em;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr 1fr 1fr 10fr 1fr 1fr 10fr;
   }
@@ -211,5 +211,9 @@
 @media (max-width: 600px) {
   .subHeading img{
     height: 50%;
+  }
+
+  .content {
+    row-gap: 0.1em;
   }
 }
