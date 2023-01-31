@@ -43,3 +43,18 @@
   display: inline;
   font-weight: normal;
 }
+
+@media (max-width: 750px) {
+  .topContent {
+    flex-direction: column;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+  }
+
+  .content img {
+    max-width: 50%;
+    height: 50%;
+  }
+}

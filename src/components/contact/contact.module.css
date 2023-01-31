@@ -7,7 +7,7 @@
 .button {
   background-color: var(--white);
   text-align: center;
-  padding: 30px 100px;
+  padding: 2em 6em;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@
 
 .button:hover {
   cursor: pointer;
-  padding: 30px 250px;
+  padding: 2em 15em;
 }
 
 .button h4 {
@@ -34,4 +34,14 @@
 
 .button:hover h4, i {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 1em 3em;
+  }
+  
+  .button:hover {
+    padding: 1em 7em;
+  }
 }
