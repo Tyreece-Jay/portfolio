@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5634a495.css",
-    "main.js": "/static/js/main.467665c3.js",
-    "static/media/me.png": "/static/media/me.275599e6eb0bd34225ba.png",
-    "static/media/university.png": "/static/media/university.d79342dbe6c4936657d2.png",
-    "static/media/fdb.png": "/static/media/fdb.96d4fb42f11d401f822b.png",
-    "index.html": "/index.html",
-    "main.5634a495.css.map": "/static/css/main.5634a495.css.map",
-    "main.467665c3.js.map": "/static/js/main.467665c3.js.map"
+    "main.css": "/tyreecesimpson.co.uk/static/css/main.960fcfef.css",
+    "main.js": "/tyreecesimpson.co.uk/static/js/main.ae49c8e1.js",
+    "static/media/me.png": "/tyreecesimpson.co.uk/static/media/me.275599e6eb0bd34225ba.png",
+    "static/media/university.png": "/tyreecesimpson.co.uk/static/media/university.d79342dbe6c4936657d2.png",
+    "static/media/fdb.png": "/tyreecesimpson.co.uk/static/media/fdb.96d4fb42f11d401f822b.png",
+    "index.html": "/tyreecesimpson.co.uk/index.html",
+    "main.960fcfef.css.map": "/tyreecesimpson.co.uk/static/css/main.960fcfef.css.map",
+    "main.ae49c8e1.js.map": "/tyreecesimpson.co.uk/static/js/main.ae49c8e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5634a495.css",
-    "static/js/main.467665c3.js"
+    "static/css/main.960fcfef.css",
+    "static/js/main.ae49c8e1.js"
   ]
 }
