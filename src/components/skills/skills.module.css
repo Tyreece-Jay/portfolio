@@ -4,15 +4,16 @@
 
 .content {
   display: grid;
-  grid-template-areas: 
-  "frontendheading backendheading practicesheading"
-  "frontend backend practices";
+  grid-template-areas:
+    "frontendheading backendheading practicesheading"
+    "frontend backend practices";
   width: 100%;
   height: 400px;
   column-gap: 30px;
   row-gap: 10px;
   grid-template-columns: 6fr 2fr 3fr;
   grid-template-rows: 1fr 10fr;
+  transition: 0.3s;
 }
 
 .subHeading {
@@ -21,12 +22,24 @@
   gap: 10px;
 }
 
+.subHeading:nth-of-type(1) {
+  grid-area: frontendheading;
+}
+
+.subHeading:nth-of-type(2) {
+  grid-area: backendheading;
+}
+
+.subHeading:nth-of-type(3) {
+  grid-area: practicesheading;
+}
+
 .frontend {
   grid-area: frontend;
   display: grid;
-  grid-template-areas: 
-  "react react react react html html html css css css ui ui"
-  "react react react react ts ts ts ts ts ts ui ui";
+  grid-template-areas:
+    "react react react react html html html css css css ui ui"
+    "react react react react ts ts ts ts ts ts ui ui";
   gap: 10px;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(12, 1fr);
@@ -48,24 +61,24 @@
   transition: 0.3s;
 }
 
-.frontend h4:nth-child(1) {
+.frontend h4:nth-of-type(1) {
   grid-area: react;
   border-radius: 8px 0px 0px 8px;
 }
 
-.frontend h4:nth-child(2) {
+.frontend h4:nth-of-type(2) {
   grid-area: html;
 }
 
-.frontend h4:nth-child(3) {
+.frontend h4:nth-of-type(3) {
   grid-area: css;
 }
 
-.frontend h4:nth-child(4) {
+.frontend h4:nth-of-type(4) {
   grid-area: ts;
 }
 
-.frontend h4:nth-child(5) {
+.frontend h4:nth-of-type(5) {
   grid-area: ui;
   border-radius: 0px 8px 8px 0px;
 }
@@ -73,9 +86,9 @@
 .backend {
   grid-area: backend;
   display: grid;
-  grid-template-areas: 
-  "csharp csharp"
-  "net sql";
+  grid-template-areas:
+    "csharp csharp"
+    "net sql";
   gap: 10px;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -97,17 +110,17 @@
   color: var(--black);
 }
 
-.backend h4:nth-child(1) {
+.backend h4:nth-of-type(1) {
   grid-area: csharp;
   border-radius: 8px 8px 0px 0px;
 }
 
-.backend h4:nth-child(2) {
+.backend h4:nth-of-type(2) {
   grid-area: net;
   border-radius: 0px 0px 0px 8px;
 }
 
-.backend h4:nth-child(3) {
+.backend h4:nth-of-type(3) {
   grid-area: sql;
   border-radius: 0px 0px 8px 0px;
 }
@@ -115,13 +128,13 @@
 .practices {
   grid-area: practices;
   display: grid;
-  grid-template-areas: 
-  "tdd programming programming"
-  "tdd programming programming"
-  "ddd programming programming"
-  "ddd devops devops"
-  "bdd devops devops"
-  "bdd devops devops";
+  grid-template-areas:
+    "tdd programming programming"
+    "tdd programming programming"
+    "ddd programming programming"
+    "ddd devops devops"
+    "bdd devops devops"
+    "bdd devops devops";
   gap: 10px;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -143,26 +156,63 @@
   color: var(--black);
 }
 
-.practices h4:nth-child(1) {
+.practices h4:nth-of-type(1) {
   grid-area: tdd;
   border-radius: 8px 0px 0px 0px;
 }
 
-.practices h4:nth-child(2) {
+.practices h4:nth-of-type(2) {
   grid-area: ddd;
 }
 
-.practices h4:nth-child(3) {
+.practices h4:nth-of-type(3) {
   grid-area: bdd;
   border-radius: 0px 0px 0px 8px;
 }
 
-.practices h4:nth-child(4) {
+.practices h4:nth-of-type(4) {
   grid-area: programming;
   border-radius: 0px 8px 0px 0px;
 }
 
-.practices h4:nth-child(5) {
+.practices h4:nth-of-type(5) {
   grid-area: devops;
   border-radius: 0px 0px 8px 0px;
+}
+
+@media (max-width: 1350px) {
+  .content {
+    grid-template-areas:
+      "frontendheading frontendheading"
+      "frontend frontend"
+      ". ."
+      "backendheading practicesheading"
+      "backend practices";
+    width: 100%;
+    height: 800px;
+    column-gap: 30px;
+    row-gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 10fr 1fr 1fr 10fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-areas:
+      "frontendheading"
+      "frontend"
+      "."
+      "backendheading"
+      "backend"
+      "."
+      "practicesheading"
+      "practices";
+    width: 100%;
+    height: 1200px;
+    column-gap: 30px;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr 1fr 10fr 1fr 1fr 10fr;
+  }
 }
