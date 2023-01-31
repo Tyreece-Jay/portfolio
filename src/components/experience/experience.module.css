@@ -8,35 +8,30 @@
   gap: 30px;
 }
 
+.content * {
+  background-color: var(--grey);
+}
+
 .content img {
   height: 100%;
-  align-self: center;
 }
 
 .topContent {
-  background-color: var(--grey);
   padding: 30px;
   border-radius: 8px 8px 0px 0px;
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-
-.topContent * {
-  background-color: var(--grey);
+  align-items: center;
 }
 
 .bottomContent {
-  background-color: var(--grey);
   padding: 30px;
   border-radius: 0px 0px 8px 8px;
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-
-.bottomContent * {
-  background-color: var(--grey);
+  align-items: center;
 }
 
 .place {
