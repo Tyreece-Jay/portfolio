@@ -1,28 +1,21 @@
 .header {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-#gradient-canvas {
-  height: 100%;
-  width: 100%;
-  --gradient-color-1: #9164d8;
-  --gradient-color-2: #5d4fda;
-  --gradient-color-3: #7dcb75;
-  --gradient-color-4: #669cce;
-  position: absolute;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: space-around;
   align-items: center;
   position: absolute;
   height: 100vh;
+  background-image: url("../../images/header.png");
+  width: 100%;
+}
+
+.header-text {
   background-color: transparent;
+  width: 60vw;
 }
 
 .icons {

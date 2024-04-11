@@ -1,0 +1,43 @@
+.about {
+  margin: 5em 10em;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.content {
+  width: 60%;
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #d74e4e;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 15px 32px;
+  text-align: center;
+  margin: 4px 4px;
+  cursor: pointer;
+  width: 16em;
+}
+
+.button:hover {
+  background-color: #d74e4e;
+}
+
+.button:focus {
+  background-color: #d74e4e;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content img {
+    max-width: 50%;
+    height: 50%;
+  }
+}

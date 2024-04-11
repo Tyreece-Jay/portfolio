@@ -13,36 +13,37 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  cursor: crosshair;
   background-color: var(--black);
-  transition: 0.3s;
-}
-
-body {
-  margin: 0 10%;
+  cursor: crosshair;
 }
 
 h1 {
   font-size: 4em;
   background: none;
-  color: var(--white);
+  color: var(--black);
   position: static;
   background-color: transparent;
 }
 
 h2 {
   font-size: 3em;
-  background: none;
   font-weight: bold;
-  color: var(--black);
-  background-color: transparent;
+  background-image: linear-gradient(60deg, rgba(253,164,116,1) 0%, rgba(215,78,78,1) 100%);
+  background-clip: text;
+  color: transparent
 }
 
 h3 {
   font-size: 3em;
   color: var(--white);
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 1.5em;
+  color: var(--white);
+  margin-bottom: 0px;
   font-weight: bold;
 }
 
@@ -55,7 +56,6 @@ h4 {
 p, ul, li {
   color: var(--white);
   font-size: 1em;
-  background-color: var(--grey);
 }
 
 @media (max-width: 600px) {

@@ -1,28 +1,43 @@
 .experience {
-  margin: 5em 0px;
+  margin: 5em 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+
 }
 
-.content * {
-  background-color: var(--grey);
+.contentImage img {
+  height: 50%;
 }
 
-.content img {
-  height: 100%;
-}
-
-.topContent {
-  padding: 30px;
-  border-radius: 8px 8px 0px 0px;
+.fdbContent {
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+}
+
+.contentText {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+}
+
+.contentText * {
+  background-color: transparent;
+}
+
+
+.contentImage {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 20em;
 }
 
 .bottomContent {
@@ -40,7 +55,6 @@
 
 .occupation {
   font-style: italic;
-  display: inline;
   font-weight: normal;
 }
 
